@@ -8,31 +8,42 @@
 
 #include <iostream>
 #include "Stock00.h"
+#include "mytime.h"
 
-int main(int argc, const char * argv[]) {
-//    Stock s1 = Stock();
-//    Stock s2("asdf");
-//    Stock *s3 = new Stock("haha");
-//
-//    s1.show();
-//    s2.show();
-//    s3->show();
-    
+void stocktest() {
+    Stock s1 = Stock();
+    Stock s2("asdf");
+    Stock *s3 = new Stock("haha");
+
+    s1.show();
+    s2.show();
+    s3->show();
+
     const int size = 3;
-    
+
     Stock array[size] = {
         Stock("xixi", 5),
         Stock("haha", 1),
         Stock("kiki", 10)
     };
-    
+
     const Stock *temp = &array[0];
-    
+
     const Stock *res;
     for (int i = 0; i < size; i++) {
         res = &(temp->topVal(array[i]));
     }
     res->show();
+}
+
+void friendtest() {
+    Time A = Time(1, 40);
+    Time B = A * 2;
+    B.show();
+}
+
+int main(int argc, const char * argv[]) {
+    friendtest();
     
     return 0;
 }

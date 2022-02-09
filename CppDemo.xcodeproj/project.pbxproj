@@ -10,6 +10,8 @@
 		844B14EC27A19AEC00BEA4D9 /* Stack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 844B14EA27A19AEC00BEA4D9 /* Stack.cpp */; };
 		8454B00F279EF21D00F15AC9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8454B00E279EF21D00F15AC9 /* main.cpp */; };
 		8454B017279EF24500F15AC9 /* Stock00.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8454B015279EF24500F15AC9 /* Stock00.cpp */; };
+		84591CCC27B2AD8C007FF8DA /* stringbad.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84591CCA27B2AD8C007FF8DA /* stringbad.cpp */; };
+		84C262D327B0D0CA00EAC8F7 /* mytime.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84C262D127B0D0CA00EAC8F7 /* mytime.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +33,10 @@
 		8454B00E279EF21D00F15AC9 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		8454B015279EF24500F15AC9 /* Stock00.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Stock00.cpp; sourceTree = "<group>"; };
 		8454B016279EF24500F15AC9 /* Stock00.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Stock00.h; sourceTree = "<group>"; };
+		84591CCA27B2AD8C007FF8DA /* stringbad.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = stringbad.cpp; sourceTree = "<group>"; };
+		84591CCB27B2AD8C007FF8DA /* stringbad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stringbad.h; sourceTree = "<group>"; };
+		84C262D127B0D0CA00EAC8F7 /* mytime.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = mytime.cpp; sourceTree = "<group>"; };
+		84C262D227B0D0CA00EAC8F7 /* mytime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mytime.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +74,10 @@
 				8454B016279EF24500F15AC9 /* Stock00.h */,
 				844B14EA27A19AEC00BEA4D9 /* Stack.cpp */,
 				844B14EB27A19AEC00BEA4D9 /* Stack.h */,
+				84C262D127B0D0CA00EAC8F7 /* mytime.cpp */,
+				84C262D227B0D0CA00EAC8F7 /* mytime.h */,
+				84591CCA27B2AD8C007FF8DA /* stringbad.cpp */,
+				84591CCB27B2AD8C007FF8DA /* stringbad.h */,
 			);
 			path = CppDemo;
 			sourceTree = "<group>";
@@ -128,7 +138,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84C262D327B0D0CA00EAC8F7 /* mytime.cpp in Sources */,
 				8454B017279EF24500F15AC9 /* Stock00.cpp in Sources */,
+				84591CCC27B2AD8C007FF8DA /* stringbad.cpp in Sources */,
 				8454B00F279EF21D00F15AC9 /* main.cpp in Sources */,
 				844B14EC27A19AEC00BEA4D9 /* Stack.cpp in Sources */,
 			);
