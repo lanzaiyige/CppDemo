@@ -9,6 +9,7 @@
 #include <iostream>
 #include "Stock00.h"
 #include "mytime.h"
+#include "placenew1.h"
 
 void stocktest() {
     Stock s1 = Stock();
@@ -42,8 +43,19 @@ void friendtest() {
     B.show();
 }
 
+void testplace() {
+    char *buffer = new char[BUF];
+    JustTesting *pc1, *pc2;
+    pc1 = new (buffer) JustTesting;
+    pc2 = new JustTesting("Heap1", 20);
+    
+    delete [] pc1;
+}
+
 int main(int argc, const char * argv[]) {
-    friendtest();
+//    friendtest();
+    
+    
     
     return 0;
 }

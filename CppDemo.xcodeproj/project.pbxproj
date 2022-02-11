@@ -13,6 +13,7 @@
 		84591CCC27B2AD8C007FF8DA /* stringbad.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84591CCA27B2AD8C007FF8DA /* stringbad.cpp */; };
 		84C262D327B0D0CA00EAC8F7 /* mytime.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84C262D127B0D0CA00EAC8F7 /* mytime.cpp */; };
 		84CFA89A27B5354200148A46 /* String.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84CFA89827B5354200148A46 /* String.cpp */; };
+		84CFA89E27B6836F00148A46 /* placenew1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84CFA89C27B6836F00148A46 /* placenew1.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,6 +41,8 @@
 		84C262D227B0D0CA00EAC8F7 /* mytime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mytime.h; sourceTree = "<group>"; };
 		84CFA89827B5354200148A46 /* String.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = String.cpp; sourceTree = "<group>"; };
 		84CFA89927B5354200148A46 /* String.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = String.h; sourceTree = "<group>"; };
+		84CFA89C27B6836F00148A46 /* placenew1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = placenew1.cpp; sourceTree = "<group>"; };
+		84CFA89D27B6836F00148A46 /* placenew1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = placenew1.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,8 @@
 				84591CCB27B2AD8C007FF8DA /* stringbad.h */,
 				84CFA89827B5354200148A46 /* String.cpp */,
 				84CFA89927B5354200148A46 /* String.h */,
+				84CFA89C27B6836F00148A46 /* placenew1.cpp */,
+				84CFA89D27B6836F00148A46 /* placenew1.h */,
 			);
 			path = CppDemo;
 			sourceTree = "<group>";
@@ -147,6 +152,7 @@
 				8454B017279EF24500F15AC9 /* Stock00.cpp in Sources */,
 				84591CCC27B2AD8C007FF8DA /* stringbad.cpp in Sources */,
 				8454B00F279EF21D00F15AC9 /* main.cpp in Sources */,
+				84CFA89E27B6836F00148A46 /* placenew1.cpp in Sources */,
 				84CFA89A27B5354200148A46 /* String.cpp in Sources */,
 				844B14EC27A19AEC00BEA4D9 /* Stack.cpp in Sources */,
 			);
