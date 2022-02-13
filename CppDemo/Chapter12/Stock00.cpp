@@ -63,6 +63,16 @@ Stock::Stock(const std::string &co, double pri) {
     total_val = pri;
 }
 
+Stock::Stock(const char *co, double pri) {
+    companyName = new char[strlen(co) + 1];
+    strcpy(companyName, co);
+}
+
+ostream & operator<<(ostream &os, const Stock &st) {
+    os << st.companyName << endl;
+    return os;
+}
+
 void Stock::show() const {
     printf("%s,%f\n", company.c_str(), total_val);
 }

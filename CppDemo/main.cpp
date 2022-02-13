@@ -10,6 +10,7 @@
 #include "Stock00.h"
 #include "mytime.h"
 #include "placenew1.h"
+#include "String.h"
 
 void stocktest() {
     Stock s1 = Stock();
@@ -52,10 +53,25 @@ void testplace() {
     delete [] pc1;
 }
 
+void testString() {
+    String *a = new String("HAHA");
+    String res = a->stringLow();
+    
+//    cout << res;
+    
+    int count = res.hasCharCount('a');
+    printf("%i", count);
+}
+
+void testStock() {
+    Stock stock = Stock("Apple", 0.1);
+    cout << stock;
+}
+
 int main(int argc, const char * argv[]) {
 //    friendtest();
-    
-    
+//    testString();
+    testStock();
     
     return 0;
 }
