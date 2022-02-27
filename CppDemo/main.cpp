@@ -11,6 +11,10 @@
 #include "mytime.h"
 #include "placenew1.h"
 #include "String.h"
+#include "CD.h"
+#include "dma.h"
+
+using namespace std;
 
 void stocktest() {
     Stock s1 = Stock();
@@ -31,7 +35,7 @@ void stocktest() {
 
     const Stock *temp = &array[0];
 
-    const Stock *res;
+    const Stock *res = nullptr;
     for (int i = 0; i < size; i++) {
         res = &(temp->topVal(array[i]));
     }
@@ -68,10 +72,45 @@ void testStock() {
     cout << stock;
 }
 
+void Bravo(const CD &disk) {
+    disk.Report();
+}
+
+void printCD() {
+    CD c1("Beatles", "Capitol", 14, 35.5);
+    Classic c2 = Classic("Piano", "Alfred", 2, 57.17, "Phi");
+    CD *pcd = &c1;
+    
+    c1.Report();
+    c2.Report();
+    
+    pcd->Report();
+    pcd = &c2;
+    pcd->Report();
+    
+    Bravo(c1);
+    Bravo(c2);
+    
+    Classic copy;
+    copy = c2;
+    copy.Report();
+}
+
+void printDMA() {
+    baseDMA *array[4];
+    for (int i = 0; i < 4; i++) {
+        array[i] = new baseDMA();
+    }
+    
+    
+}
+
 int main(int argc, const char * argv[]) {
 //    friendtest();
 //    testString();
-    testStock();
+//    testStock();
+//    printCD();
+    printDMA();
     
     return 0;
 }
