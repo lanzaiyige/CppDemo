@@ -13,6 +13,8 @@
 #include "String.h"
 #include "CD.h"
 #include "dma.h"
+#include "Student.h"
+#include "Worker.h"
 
 using namespace std;
 
@@ -105,12 +107,17 @@ void printDMA() {
     
 }
 
+void testStudent() {
+    Waiter apple("Apple", 314, 5);
+}
+
 int main(int argc, const char * argv[]) {
 //    friendtest();
 //    testString();
 //    testStock();
 //    printCD();
-    printDMA();
+//    printDMA();
+    testStudent();
     
     return 0;
 }

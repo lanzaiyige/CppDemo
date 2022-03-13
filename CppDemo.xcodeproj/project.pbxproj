@@ -12,9 +12,12 @@
 		844B14EC27A19AEC00BEA4D9 /* Stack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 844B14EA27A19AEC00BEA4D9 /* Stack.cpp */; };
 		8454B00F279EF21D00F15AC9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8454B00E279EF21D00F15AC9 /* main.cpp */; };
 		8454B017279EF24500F15AC9 /* Stock00.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8454B015279EF24500F15AC9 /* Stock00.cpp */; };
+		8457468227D4E88E00724BF2 /* Student.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8457468027D4E88E00724BF2 /* Student.cpp */; };
 		84591CCC27B2AD8C007FF8DA /* stringbad.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84591CCA27B2AD8C007FF8DA /* stringbad.cpp */; };
 		84A029BF27B8AA7500ECA48F /* tabtenn0.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84A029BD27B8AA7500ECA48F /* tabtenn0.cpp */; };
 		84A029C227B8CD7500ECA48F /* brass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84A029C027B8CD7500ECA48F /* brass.cpp */; };
+		84A7A86E27DDEAA5001E2CD8 /* stcktp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84A7A86C27DDEAA5001E2CD8 /* stcktp.cpp */; };
+		84A9B35A27DD965100594CC6 /* Worker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84A9B35827DD965100594CC6 /* Worker.cpp */; };
 		84C262D327B0D0CA00EAC8F7 /* mytime.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84C262D127B0D0CA00EAC8F7 /* mytime.cpp */; };
 		84CFA89A27B5354200148A46 /* String.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84CFA89827B5354200148A46 /* String.cpp */; };
 		84CFA89E27B6836F00148A46 /* placenew1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84CFA89C27B6836F00148A46 /* placenew1.cpp */; };
@@ -47,12 +50,18 @@
 		8454B00E279EF21D00F15AC9 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		8454B015279EF24500F15AC9 /* Stock00.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Stock00.cpp; sourceTree = "<group>"; };
 		8454B016279EF24500F15AC9 /* Stock00.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Stock00.h; sourceTree = "<group>"; };
+		8457468027D4E88E00724BF2 /* Student.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Student.cpp; sourceTree = "<group>"; };
+		8457468127D4E88E00724BF2 /* Student.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
 		84591CCA27B2AD8C007FF8DA /* stringbad.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = stringbad.cpp; sourceTree = "<group>"; };
 		84591CCB27B2AD8C007FF8DA /* stringbad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stringbad.h; sourceTree = "<group>"; };
 		84A029BD27B8AA7500ECA48F /* tabtenn0.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = tabtenn0.cpp; sourceTree = "<group>"; };
 		84A029BE27B8AA7500ECA48F /* tabtenn0.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tabtenn0.h; sourceTree = "<group>"; };
 		84A029C027B8CD7500ECA48F /* brass.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = brass.cpp; sourceTree = "<group>"; };
 		84A029C127B8CD7500ECA48F /* brass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = brass.h; sourceTree = "<group>"; };
+		84A7A86C27DDEAA5001E2CD8 /* stcktp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = stcktp.cpp; sourceTree = "<group>"; };
+		84A7A86D27DDEAA5001E2CD8 /* stcktp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stcktp.h; sourceTree = "<group>"; };
+		84A9B35827DD965100594CC6 /* Worker.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Worker.cpp; sourceTree = "<group>"; };
+		84A9B35927DD965100594CC6 /* Worker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Worker.h; sourceTree = "<group>"; };
 		84C262D127B0D0CA00EAC8F7 /* mytime.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = mytime.cpp; sourceTree = "<group>"; };
 		84C262D227B0D0CA00EAC8F7 /* mytime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mytime.h; sourceTree = "<group>"; };
 		84CFA89827B5354200148A46 /* String.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = String.cpp; sourceTree = "<group>"; };
@@ -99,6 +108,7 @@
 		8454B00D279EF21D00F15AC9 /* CppDemo */ = {
 			isa = PBXGroup;
 			children = (
+				8457467F27D4E87400724BF2 /* Chapter14 */,
 				84A029BB27B8A9B100ECA48F /* Chapter12 */,
 				84A029BC27B8AA2900ECA48F /* Chapter13 */,
 				8454B00E279EF21D00F15AC9 /* main.cpp */,
@@ -106,25 +116,38 @@
 			path = CppDemo;
 			sourceTree = "<group>";
 		};
+		8457467F27D4E87400724BF2 /* Chapter14 */ = {
+			isa = PBXGroup;
+			children = (
+				8457468027D4E88E00724BF2 /* Student.cpp */,
+				8457468127D4E88E00724BF2 /* Student.h */,
+				84A9B35827DD965100594CC6 /* Worker.cpp */,
+				84A9B35927DD965100594CC6 /* Worker.h */,
+				84A7A86C27DDEAA5001E2CD8 /* stcktp.cpp */,
+				84A7A86D27DDEAA5001E2CD8 /* stcktp.h */,
+			);
+			path = Chapter14;
+			sourceTree = "<group>";
+		};
 		84A029BB27B8A9B100ECA48F /* Chapter12 */ = {
 			isa = PBXGroup;
 			children = (
-				8454B015279EF24500F15AC9 /* Stock00.cpp */,
-				8454B016279EF24500F15AC9 /* Stock00.h */,
-				844B14EA27A19AEC00BEA4D9 /* Stack.cpp */,
-				844B14EB27A19AEC00BEA4D9 /* Stack.h */,
+				844422A427B7C63600AC454A /* Cow.cpp */,
+				844422A527B7C63600AC454A /* Cow.h */,
 				84C262D127B0D0CA00EAC8F7 /* mytime.cpp */,
 				84C262D227B0D0CA00EAC8F7 /* mytime.h */,
-				84591CCA27B2AD8C007FF8DA /* stringbad.cpp */,
-				84591CCB27B2AD8C007FF8DA /* stringbad.h */,
-				84CFA89827B5354200148A46 /* String.cpp */,
-				84CFA89927B5354200148A46 /* String.h */,
 				84CFA89C27B6836F00148A46 /* placenew1.cpp */,
 				84CFA89D27B6836F00148A46 /* placenew1.h */,
 				8444229E27B7785400AC454A /* Queue.cpp */,
 				8444229F27B7785400AC454A /* Queue.h */,
-				844422A427B7C63600AC454A /* Cow.cpp */,
-				844422A527B7C63600AC454A /* Cow.h */,
+				844B14EA27A19AEC00BEA4D9 /* Stack.cpp */,
+				844B14EB27A19AEC00BEA4D9 /* Stack.h */,
+				8454B015279EF24500F15AC9 /* Stock00.cpp */,
+				8454B016279EF24500F15AC9 /* Stock00.h */,
+				84CFA89827B5354200148A46 /* String.cpp */,
+				84CFA89927B5354200148A46 /* String.h */,
+				84591CCA27B2AD8C007FF8DA /* stringbad.cpp */,
+				84591CCB27B2AD8C007FF8DA /* stringbad.h */,
 			);
 			path = Chapter12;
 			sourceTree = "<group>";
@@ -132,18 +155,18 @@
 		84A029BC27B8AA2900ECA48F /* Chapter13 */ = {
 			isa = PBXGroup;
 			children = (
-				84A029BD27B8AA7500ECA48F /* tabtenn0.cpp */,
-				84A029BE27B8AA7500ECA48F /* tabtenn0.h */,
-				84A029C027B8CD7500ECA48F /* brass.cpp */,
-				84A029C127B8CD7500ECA48F /* brass.h */,
 				84F3B3AA27C0EE0F00F89516 /* acctabc.cpp */,
 				84F3B3AB27C0EE0F00F89516 /* acctabc.h */,
-				84D2E14D27C9E431001986B5 /* dma.cpp */,
-				84D2E14E27C9E431001986B5 /* dma.h */,
+				84A029C027B8CD7500ECA48F /* brass.cpp */,
+				84A029C127B8CD7500ECA48F /* brass.h */,
 				84DEF9F827CB2A5A002ED765 /* CD.cpp */,
 				84DEF9F927CB2A5A002ED765 /* CD.h */,
+				84D2E14D27C9E431001986B5 /* dma.cpp */,
+				84D2E14E27C9E431001986B5 /* dma.h */,
 				84DEF9FB27CB78E4002ED765 /* Port.cpp */,
 				84DEF9FC27CB78E4002ED765 /* Port.h */,
+				84A029BD27B8AA7500ECA48F /* tabtenn0.cpp */,
+				84A029BE27B8AA7500ECA48F /* tabtenn0.h */,
 			);
 			path = Chapter13;
 			sourceTree = "<group>";
@@ -207,12 +230,15 @@
 				84C262D327B0D0CA00EAC8F7 /* mytime.cpp in Sources */,
 				84F3B3AC27C0EE0F00F89516 /* acctabc.cpp in Sources */,
 				8454B017279EF24500F15AC9 /* Stock00.cpp in Sources */,
+				8457468227D4E88E00724BF2 /* Student.cpp in Sources */,
+				84A7A86E27DDEAA5001E2CD8 /* stcktp.cpp in Sources */,
 				84591CCC27B2AD8C007FF8DA /* stringbad.cpp in Sources */,
 				84DEF9FA27CB2A5A002ED765 /* CD.cpp in Sources */,
 				8454B00F279EF21D00F15AC9 /* main.cpp in Sources */,
 				84D2E14F27C9E431001986B5 /* dma.cpp in Sources */,
 				84A029C227B8CD7500ECA48F /* brass.cpp in Sources */,
 				84CFA89E27B6836F00148A46 /* placenew1.cpp in Sources */,
+				84A9B35A27DD965100594CC6 /* Worker.cpp in Sources */,
 				84DEF9FD27CB78E4002ED765 /* Port.cpp in Sources */,
 				84CFA89A27B5354200148A46 /* String.cpp in Sources */,
 				844422A627B7C63600AC454A /* Cow.cpp in Sources */,
