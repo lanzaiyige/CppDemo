@@ -15,6 +15,7 @@
 #include "dma.h"
 #include "Student.h"
 #include "Worker.h"
+#include "Wine.h"
 
 using namespace std;
 
@@ -111,13 +112,34 @@ void testStudent() {
     Waiter apple("Apple", 314, 5);
 }
 
+void testWine() {
+    std::cout << "Enter the name of wine: ";
+    char lab[50];
+    std::cin.getline(lab, 50);
+    //std::cout << "Enter Years: ";
+    //int yrs;
+    //std::cin >> yrs;
+    Wine holding(lab, 0);
+    holding.GetBottles();
+    holding.Show();
+    std::cout << "The total bottles: " << holding.sum() << std::endl;
+    const int YRS = 3;
+    int y[YRS] = { 1993,1995,1998 };
+    int b[YRS] = { 48, 60,72 };
+    Wine more("Gushing Grape Red", YRS, y, b);
+    more.Show();
+    std::cout << "Total bottles for " << more.Label() << ": " << more.sum() << std::endl;
+    system("pause");
+}
+
 int main(int argc, const char * argv[]) {
 //    friendtest();
 //    testString();
 //    testStock();
 //    printCD();
 //    printDMA();
-    testStudent();
+//    testStudent();
+    testWine();
     
     return 0;
 }
