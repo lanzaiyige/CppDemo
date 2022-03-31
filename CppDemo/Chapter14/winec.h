@@ -14,19 +14,21 @@
 #include <string>
 #include <valarray>
 
-typedef std::valarray<int> ArrInt;
+using namespace std;
+
+typedef std::valarray<int> ArrayInt;
 
 class Pairc {
 private:
-    ArrInt x;
-    ArrInt y;
+    ArrayInt x;
+    ArrayInt y;
     int size;
 public:
     Pairc(const int x1[], const int x2[], int s);
     Pairc(int s);
     ~Pairc() {}
-    ArrInt &first() { return x; }
-    ArrInt &second() { return y; }
+    ArrayInt &first() { return x; }
+    ArrayInt &second() { return y; }
     void SetFirst(const int x1[]);
     void setSecond(const int y1[]);
     int sumFirst();
@@ -34,11 +36,19 @@ public:
     virtual void show();
 };
 
-class winec :  {
+class winec : private string, private Pairc {
 private:
-    
+    int Year;
+    int *year;
+    int *bottle;
 public:
-    <#member functions#>
+    winec(const char *l, int y, const int yr[], const int bot[]);
+    winec(const char *l, int y);
+    winec();
+    void GetBottles();
+    string &Label();
+    int sum();
+    void Show();
 };
 
 

@@ -49,3 +49,25 @@ void Pairc::show() {
         std::cout << x[in] << ",  " << y[in] << "\n";
     }
 }
+
+winec::winec() : string("None"), Year(0), Pairc(0) {
+    year = new int[1];
+    bottle = new int[1];
+    year[0] = 0;
+    bottle[0] = 0;
+}
+
+winec::winec(const char *l, int y) : string(l), Year(y), Pairc(y) {
+    year = new int[1];
+    bottle = new int[1];
+    year[0] = 0;
+    bottle[0] = 0;
+}
+
+winec::winec(const char *l, int y, const int yr[], const int bot[]) : string(l), Year(y), Pairc(yr, bot, y) {
+    year = new int[1];
+    bottle = new int[1];
+    year[0] = 0;
+    bottle[0] = 0;
+}
+
