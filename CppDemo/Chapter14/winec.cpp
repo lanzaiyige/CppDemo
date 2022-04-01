@@ -71,3 +71,36 @@ winec::winec(const char *l, int y, const int yr[], const int bot[]) : string(l),
     bottle[0] = 0;
 }
 
+void winec::GetBottles() {
+    int year, bottle;
+    std::cout << "Enter the Years: ";
+    std::cin >> year;
+    this->year = new int[Year];
+    this->bottle = new int[Year];
+    std::cout << "Enter the year of manufacture and the corresponding number of bottles.\n";
+    for (int in = 0; in < year; in++)
+    {
+        std::cout << "The manufacture year: ";
+        std::cin >> year;
+        std::cout << "The number of bottles: ";
+        std::cin >> bottle;
+        Pairc::SetFirst(this->year);
+        Pairc::setSecond(this->bottle);
+//        yearBottles[in].setFirst(year);
+//        yearBottles[in].setSecond(bottle);
+    }
+}
+
+string &winec::Label() {
+    return *this;
+}
+
+int winec::sum() {
+    return Pairc::sumSecond();
+}
+
+void winec::Show() {
+    std::cout << "FullName: " << (string)*this << std::endl;
+    std::cout << "Years: " << year << std::endl;
+    Pairc::show();
+}

@@ -26,6 +26,7 @@
 		84D2E14F27C9E431001986B5 /* dma.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84D2E14D27C9E431001986B5 /* dma.cpp */; };
 		84DEF9FA27CB2A5A002ED765 /* CD.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84DEF9F827CB2A5A002ED765 /* CD.cpp */; };
 		84DEF9FD27CB78E4002ED765 /* Port.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84DEF9FB27CB78E4002ED765 /* Port.cpp */; };
+		84EAED2F27F71FAA00DC781A /* Person.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84EAED2D27F71FAA00DC781A /* Person.cpp */; };
 		84F3B3AC27C0EE0F00F89516 /* acctabc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84F3B3AA27C0EE0F00F89516 /* acctabc.cpp */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +81,8 @@
 		84DEF9F927CB2A5A002ED765 /* CD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CD.h; sourceTree = "<group>"; };
 		84DEF9FB27CB78E4002ED765 /* Port.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Port.cpp; sourceTree = "<group>"; };
 		84DEF9FC27CB78E4002ED765 /* Port.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Port.h; sourceTree = "<group>"; };
+		84EAED2D27F71FAA00DC781A /* Person.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Person.cpp; sourceTree = "<group>"; };
+		84EAED2E27F71FAA00DC781A /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		84F3B3AA27C0EE0F00F89516 /* acctabc.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = acctabc.cpp; sourceTree = "<group>"; };
 		84F3B3AB27C0EE0F00F89516 /* acctabc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = acctabc.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -131,10 +134,12 @@
 				8457468127D4E88E00724BF2 /* Student.h */,
 				849FB9EA27EED79B00B601BE /* Wine.cpp */,
 				849FB9EB27EED79B00B601BE /* Wine.h */,
-				84A9B35827DD965100594CC6 /* Worker.cpp */,
-				84A9B35927DD965100594CC6 /* Worker.h */,
 				84AC74CF27F01BA8008099C5 /* winec.cpp */,
 				84AC74D027F01BA8008099C5 /* winec.h */,
+				84A9B35827DD965100594CC6 /* Worker.cpp */,
+				84A9B35927DD965100594CC6 /* Worker.h */,
+				84EAED2D27F71FAA00DC781A /* Person.cpp */,
+				84EAED2E27F71FAA00DC781A /* Person.h */,
 			);
 			path = Chapter14;
 			sourceTree = "<group>";
@@ -253,6 +258,7 @@
 				84DEF9FD27CB78E4002ED765 /* Port.cpp in Sources */,
 				84CFA89A27B5354200148A46 /* String.cpp in Sources */,
 				844422A627B7C63600AC454A /* Cow.cpp in Sources */,
+				84EAED2F27F71FAA00DC781A /* Person.cpp in Sources */,
 				84AC74D127F01BA8008099C5 /* winec.cpp in Sources */,
 				844B14EC27A19AEC00BEA4D9 /* Stack.cpp in Sources */,
 				844422A027B7785400AC454A /* Queue.cpp in Sources */,
