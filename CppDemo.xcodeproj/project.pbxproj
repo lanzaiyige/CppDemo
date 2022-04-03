@@ -20,6 +20,7 @@
 		84A7A86E27DDEAA5001E2CD8 /* stcktp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84A7A86C27DDEAA5001E2CD8 /* stcktp.cpp */; };
 		84A9B35A27DD965100594CC6 /* Worker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84A9B35827DD965100594CC6 /* Worker.cpp */; };
 		84AC74D127F01BA8008099C5 /* winec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84AC74CF27F01BA8008099C5 /* winec.cpp */; };
+		84AF122327F951BB000FFBD9 /* Queue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84AF122127F951BB000FFBD9 /* Queue.cpp */; };
 		84C262D327B0D0CA00EAC8F7 /* mytime.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84C262D127B0D0CA00EAC8F7 /* mytime.cpp */; };
 		84CFA89A27B5354200148A46 /* String.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84CFA89827B5354200148A46 /* String.cpp */; };
 		84CFA89E27B6836F00148A46 /* placenew1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84CFA89C27B6836F00148A46 /* placenew1.cpp */; };
@@ -70,6 +71,8 @@
 		84A9B35927DD965100594CC6 /* Worker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Worker.h; sourceTree = "<group>"; };
 		84AC74CF27F01BA8008099C5 /* winec.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = winec.cpp; sourceTree = "<group>"; };
 		84AC74D027F01BA8008099C5 /* winec.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = winec.h; sourceTree = "<group>"; };
+		84AF122127F951BB000FFBD9 /* Queue.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Queue.cpp; sourceTree = "<group>"; };
+		84AF122227F951BB000FFBD9 /* Queue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Queue.h; sourceTree = "<group>"; };
 		84C262D127B0D0CA00EAC8F7 /* mytime.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = mytime.cpp; sourceTree = "<group>"; };
 		84C262D227B0D0CA00EAC8F7 /* mytime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mytime.h; sourceTree = "<group>"; };
 		84CFA89827B5354200148A46 /* String.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = String.cpp; sourceTree = "<group>"; };
@@ -144,6 +147,8 @@
 				84A9B35927DD965100594CC6 /* Worker.h */,
 				84EAED2D27F71FAA00DC781A /* Person.cpp */,
 				84EAED2E27F71FAA00DC781A /* Person.h */,
+				84AF122127F951BB000FFBD9 /* Queue.cpp */,
+				84AF122227F951BB000FFBD9 /* Queue.h */,
 			);
 			path = Chapter14;
 			sourceTree = "<group>";
@@ -260,6 +265,7 @@
 				8454B017279EF24500F15AC9 /* Stock00.cpp in Sources */,
 				8457468227D4E88E00724BF2 /* Student.cpp in Sources */,
 				84A7A86E27DDEAA5001E2CD8 /* stcktp.cpp in Sources */,
+				84AF122327F951BB000FFBD9 /* Queue.cpp in Sources */,
 				84EAED3327F8722D00DC781A /* tv.cpp in Sources */,
 				84591CCC27B2AD8C007FF8DA /* stringbad.cpp in Sources */,
 				84DEF9FA27CB2A5A002ED765 /* CD.cpp in Sources */,

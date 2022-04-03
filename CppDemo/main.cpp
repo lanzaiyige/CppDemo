@@ -16,6 +16,7 @@
 #include "Student.h"
 #include "Worker.h"
 #include "Wine.h"
+#include "Queue.h"
 
 using namespace std;
 
@@ -132,6 +133,30 @@ void testWine() {
     system("pause");
 }
 
+const int SIZE = 3;
+int test_queue() {
+    int count = 0;
+    Workers* pWorker = new Workers[SIZE];
+    pWorker[0] = Workers("Jim", 1001);
+    pWorker[1] = Workers("Tom", 1002);
+    pWorker[2] = Workers("Tim", 1003);
+    Queue<Workers> queue(3);
+    while (queue.queuecount() < 3)
+        queue.enqueue(pWorker[count++]);
+    if (queue.queuecount() == 3){
+        std::cout << "The Queue is full, the elements are: \n";
+    }
+    queue.show();
+    while (queue.queuecount() > 0)
+        queue.dequeue(pWorker[--count]);
+    if (queue.queuecount() == 0){
+        std::cout << "The Queue is empty now. \n";
+    }
+    delete[] pWorker;
+
+    return 0;
+}
+
 int main(int argc, const char * argv[]) {
 //    friendtest();
 //    testString();
@@ -139,7 +164,8 @@ int main(int argc, const char * argv[]) {
 //    printCD();
 //    printDMA();
 //    testStudent();
-    testWine();
+//    testWine();
+    test_queue();
     
     return 0;
 }
