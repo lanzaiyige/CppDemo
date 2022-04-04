@@ -17,6 +17,8 @@
 #include "Worker.h"
 #include "Wine.h"
 #include "Queue.h"
+#include "error.h"
+#include "newexcp.h";
 
 using namespace std;
 
@@ -157,6 +159,11 @@ int test_queue() {
     return 0;
 }
 
+int test_func() {
+    printf("%s", "a");
+    return 0;
+}
+
 int main(int argc, const char * argv[]) {
 //    friendtest();
 //    testString();
@@ -165,7 +172,9 @@ int main(int argc, const char * argv[]) {
 //    printDMA();
 //    testStudent();
 //    testWine();
-    test_queue();
+//    test_queue();
+//    error *err = new error(5, -5);
+    Demo *demo = new Demo();
     
     return 0;
 }
