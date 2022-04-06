@@ -32,6 +32,7 @@
 		84DEF9FD27CB78E4002ED765 /* Port.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84DEF9FB27CB78E4002ED765 /* Port.cpp */; };
 		84EAED2F27F71FAA00DC781A /* Person.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84EAED2D27F71FAA00DC781A /* Person.cpp */; };
 		84EAED3327F8722D00DC781A /* tv.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84EAED3127F8722D00DC781A /* tv.cpp */; };
+		84EAED3827FDB60900DC781A /* RTTI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84EAED3627FDB60900DC781A /* RTTI.cpp */; };
 		84F3B3AC27C0EE0F00F89516 /* acctabc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84F3B3AA27C0EE0F00F89516 /* acctabc.cpp */; };
 /* End PBXBuildFile section */
 
@@ -98,6 +99,8 @@
 		84EAED2E27F71FAA00DC781A /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		84EAED3127F8722D00DC781A /* tv.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = tv.cpp; sourceTree = "<group>"; };
 		84EAED3227F8722D00DC781A /* tv.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tv.h; sourceTree = "<group>"; };
+		84EAED3627FDB60900DC781A /* RTTI.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RTTI.cpp; sourceTree = "<group>"; };
+		84EAED3727FDB60900DC781A /* RTTI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTTI.h; sourceTree = "<group>"; };
 		84F3B3AA27C0EE0F00F89516 /* acctabc.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = acctabc.cpp; sourceTree = "<group>"; };
 		84F3B3AB27C0EE0F00F89516 /* acctabc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = acctabc.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -215,6 +218,8 @@
 				84CA589727FAEEEC0029255E /* newexcp.h */,
 				84CA589927FAF2000029255E /* sales.cpp */,
 				84CA589A27FAF2000029255E /* sales.h */,
+				84EAED3627FDB60900DC781A /* RTTI.cpp */,
+				84EAED3727FDB60900DC781A /* RTTI.h */,
 			);
 			path = Chapter15;
 			sourceTree = "<group>";
@@ -276,6 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84EAED3827FDB60900DC781A /* RTTI.cpp in Sources */,
 				84C262D327B0D0CA00EAC8F7 /* mytime.cpp in Sources */,
 				84CA589827FAEEEC0029255E /* newexcp.cpp in Sources */,
 				84F3B3AC27C0EE0F00F89516 /* acctabc.cpp in Sources */,

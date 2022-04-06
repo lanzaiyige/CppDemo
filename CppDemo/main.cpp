@@ -18,7 +18,9 @@
 #include "Wine.h"
 #include "Queue.h"
 #include "error.h"
-#include "newexcp.h";
+#include "newexcp.h"
+#include "RTTI.h"
+#include <typeinfo>
 
 using namespace std;
 
@@ -164,6 +166,15 @@ int test_func() {
     return 0;
 }
 
+void test_typeid() {
+    Magnificent *pg = new Magnificent(0,'B');
+    if (typeid(*pg) == typeid(Superb)) {
+        printf("haha\n");
+    } else {
+        printf("nop\n");
+    }
+}
+
 int main(int argc, const char * argv[]) {
 //    friendtest();
 //    testString();
@@ -174,7 +185,8 @@ int main(int argc, const char * argv[]) {
 //    testWine();
 //    test_queue();
 //    error *err = new error(5, -5);
-    Demo *demo = new Demo();
+//    Demo *demo = new Demo();
+    test_typeid();
     
     return 0;
 }
