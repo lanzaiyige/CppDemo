@@ -33,6 +33,7 @@
 		84EAED2F27F71FAA00DC781A /* Person.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84EAED2D27F71FAA00DC781A /* Person.cpp */; };
 		84EAED3327F8722D00DC781A /* tv.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84EAED3127F8722D00DC781A /* tv.cpp */; };
 		84EAED3827FDB60900DC781A /* RTTI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84EAED3627FDB60900DC781A /* RTTI.cpp */; };
+		84EAED3D27FF05BD00DC781A /* str1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84EAED3B27FF05BD00DC781A /* str1.cpp */; };
 		84F3B3AC27C0EE0F00F89516 /* acctabc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84F3B3AA27C0EE0F00F89516 /* acctabc.cpp */; };
 /* End PBXBuildFile section */
 
@@ -101,6 +102,8 @@
 		84EAED3227F8722D00DC781A /* tv.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tv.h; sourceTree = "<group>"; };
 		84EAED3627FDB60900DC781A /* RTTI.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RTTI.cpp; sourceTree = "<group>"; };
 		84EAED3727FDB60900DC781A /* RTTI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTTI.h; sourceTree = "<group>"; };
+		84EAED3B27FF05BD00DC781A /* str1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = str1.cpp; sourceTree = "<group>"; };
+		84EAED3C27FF05BD00DC781A /* str1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = str1.h; sourceTree = "<group>"; };
 		84F3B3AA27C0EE0F00F89516 /* acctabc.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = acctabc.cpp; sourceTree = "<group>"; };
 		84F3B3AB27C0EE0F00F89516 /* acctabc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = acctabc.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -135,6 +138,7 @@
 		8454B00D279EF21D00F15AC9 /* CppDemo */ = {
 			isa = PBXGroup;
 			children = (
+				84EAED3A27FF05AC00DC781A /* Chapter16 */,
 				84EAED3027F8721B00DC781A /* Chapter15 */,
 				8457467F27D4E87400724BF2 /* Chapter14 */,
 				84A029BB27B8A9B100ECA48F /* Chapter12 */,
@@ -224,6 +228,15 @@
 			path = Chapter15;
 			sourceTree = "<group>";
 		};
+		84EAED3A27FF05AC00DC781A /* Chapter16 */ = {
+			isa = PBXGroup;
+			children = (
+				84EAED3B27FF05BD00DC781A /* str1.cpp */,
+				84EAED3C27FF05BD00DC781A /* str1.h */,
+			);
+			path = Chapter16;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -284,6 +297,7 @@
 				84EAED3827FDB60900DC781A /* RTTI.cpp in Sources */,
 				84C262D327B0D0CA00EAC8F7 /* mytime.cpp in Sources */,
 				84CA589827FAEEEC0029255E /* newexcp.cpp in Sources */,
+				84EAED3D27FF05BD00DC781A /* str1.cpp in Sources */,
 				84F3B3AC27C0EE0F00F89516 /* acctabc.cpp in Sources */,
 				8454B017279EF24500F15AC9 /* Stock00.cpp in Sources */,
 				8457468227D4E88E00724BF2 /* Student.cpp in Sources */,

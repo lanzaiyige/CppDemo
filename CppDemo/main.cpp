@@ -21,6 +21,7 @@
 #include "newexcp.h"
 #include "RTTI.h"
 #include <typeinfo>
+#include "str1.h"
 
 using namespace std;
 
@@ -186,7 +187,8 @@ int main(int argc, const char * argv[]) {
 //    test_queue();
 //    error *err = new error(5, -5);
 //    Demo *demo = new Demo();
-    test_typeid();
+//    test_typeid();
+    test_string();
     
     return 0;
 }
