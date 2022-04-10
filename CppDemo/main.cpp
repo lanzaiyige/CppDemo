@@ -22,6 +22,10 @@
 #include "RTTI.h"
 #include <typeinfo>
 #include "str1.h"
+#include "smartptrs.h"
+#include "fowl.h"
+#include "vect1.h"
+#include "functor.h"
 
 using namespace std;
 
@@ -188,7 +192,14 @@ int main(int argc, const char * argv[]) {
 //    error *err = new error(5, -5);
 //    Demo *demo = new Demo();
 //    test_typeid();
-    test_string();
+//    test_string();
+//    test_smart_ptr();
+//    test_fowl();
+//    test_fowl_shared();
+//    test_unique_ptr();
+//    test_vector();
+//    test_iterator();
+    test_functor();
     
     return 0;
 }

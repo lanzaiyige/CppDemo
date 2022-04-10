@@ -19,8 +19,12 @@
 		84A029C227B8CD7500ECA48F /* brass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84A029C027B8CD7500ECA48F /* brass.cpp */; };
 		84A7A86E27DDEAA5001E2CD8 /* stcktp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84A7A86C27DDEAA5001E2CD8 /* stcktp.cpp */; };
 		84A9B35A27DD965100594CC6 /* Worker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84A9B35827DD965100594CC6 /* Worker.cpp */; };
+		84AABFC4280127B0002B3D96 /* smartptrs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84AABFC2280127B0002B3D96 /* smartptrs.cpp */; };
+		84AABFC7280136B7002B3D96 /* fowl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84AABFC5280136B7002B3D96 /* fowl.cpp */; };
 		84AC74D127F01BA8008099C5 /* winec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84AC74CF27F01BA8008099C5 /* winec.cpp */; };
 		84AF122327F951BB000FFBD9 /* Queue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84AF122127F951BB000FFBD9 /* Queue.cpp */; };
+		84B2BA0D28027F2700C01DA9 /* vect1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84B2BA0B28027F2700C01DA9 /* vect1.cpp */; };
+		84B2BA102802DEE200C01DA9 /* functor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84B2BA0E2802DEE200C01DA9 /* functor.cpp */; };
 		84C262D327B0D0CA00EAC8F7 /* mytime.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84C262D127B0D0CA00EAC8F7 /* mytime.cpp */; };
 		84CA589527FA94DC0029255E /* error.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84CA589327FA94DC0029255E /* error.cpp */; };
 		84CA589827FAEEEC0029255E /* newexcp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84CA589627FAEEEC0029255E /* newexcp.cpp */; };
@@ -74,10 +78,18 @@
 		84A7A86D27DDEAA5001E2CD8 /* stcktp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stcktp.h; sourceTree = "<group>"; };
 		84A9B35827DD965100594CC6 /* Worker.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Worker.cpp; sourceTree = "<group>"; };
 		84A9B35927DD965100594CC6 /* Worker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Worker.h; sourceTree = "<group>"; };
+		84AABFC2280127B0002B3D96 /* smartptrs.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = smartptrs.cpp; sourceTree = "<group>"; };
+		84AABFC3280127B0002B3D96 /* smartptrs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = smartptrs.h; sourceTree = "<group>"; };
+		84AABFC5280136B7002B3D96 /* fowl.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = fowl.cpp; sourceTree = "<group>"; };
+		84AABFC6280136B7002B3D96 /* fowl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fowl.h; sourceTree = "<group>"; };
 		84AC74CF27F01BA8008099C5 /* winec.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = winec.cpp; sourceTree = "<group>"; };
 		84AC74D027F01BA8008099C5 /* winec.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = winec.h; sourceTree = "<group>"; };
 		84AF122127F951BB000FFBD9 /* Queue.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Queue.cpp; sourceTree = "<group>"; };
 		84AF122227F951BB000FFBD9 /* Queue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Queue.h; sourceTree = "<group>"; };
+		84B2BA0B28027F2700C01DA9 /* vect1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = vect1.cpp; sourceTree = "<group>"; };
+		84B2BA0C28027F2700C01DA9 /* vect1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vect1.h; sourceTree = "<group>"; };
+		84B2BA0E2802DEE200C01DA9 /* functor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = functor.cpp; sourceTree = "<group>"; };
+		84B2BA0F2802DEE200C01DA9 /* functor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = functor.h; sourceTree = "<group>"; };
 		84C262D127B0D0CA00EAC8F7 /* mytime.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = mytime.cpp; sourceTree = "<group>"; };
 		84C262D227B0D0CA00EAC8F7 /* mytime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mytime.h; sourceTree = "<group>"; };
 		84CA589327FA94DC0029255E /* error.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = error.cpp; sourceTree = "<group>"; };
@@ -233,6 +245,14 @@
 			children = (
 				84EAED3B27FF05BD00DC781A /* str1.cpp */,
 				84EAED3C27FF05BD00DC781A /* str1.h */,
+				84AABFC2280127B0002B3D96 /* smartptrs.cpp */,
+				84AABFC3280127B0002B3D96 /* smartptrs.h */,
+				84AABFC5280136B7002B3D96 /* fowl.cpp */,
+				84AABFC6280136B7002B3D96 /* fowl.h */,
+				84B2BA0B28027F2700C01DA9 /* vect1.cpp */,
+				84B2BA0C28027F2700C01DA9 /* vect1.h */,
+				84B2BA0E2802DEE200C01DA9 /* functor.cpp */,
+				84B2BA0F2802DEE200C01DA9 /* functor.h */,
 			);
 			path = Chapter16;
 			sourceTree = "<group>";
@@ -306,7 +326,9 @@
 				84EAED3327F8722D00DC781A /* tv.cpp in Sources */,
 				84591CCC27B2AD8C007FF8DA /* stringbad.cpp in Sources */,
 				84DEF9FA27CB2A5A002ED765 /* CD.cpp in Sources */,
+				84AABFC4280127B0002B3D96 /* smartptrs.cpp in Sources */,
 				8454B00F279EF21D00F15AC9 /* main.cpp in Sources */,
+				84B2BA0D28027F2700C01DA9 /* vect1.cpp in Sources */,
 				84D2E14F27C9E431001986B5 /* dma.cpp in Sources */,
 				84A029C227B8CD7500ECA48F /* brass.cpp in Sources */,
 				84CFA89E27B6836F00148A46 /* placenew1.cpp in Sources */,
@@ -316,10 +338,12 @@
 				84CFA89A27B5354200148A46 /* String.cpp in Sources */,
 				84CA589B27FAF2000029255E /* sales.cpp in Sources */,
 				844422A627B7C63600AC454A /* Cow.cpp in Sources */,
+				84AABFC7280136B7002B3D96 /* fowl.cpp in Sources */,
 				84EAED2F27F71FAA00DC781A /* Person.cpp in Sources */,
 				84AC74D127F01BA8008099C5 /* winec.cpp in Sources */,
 				84CA589527FA94DC0029255E /* error.cpp in Sources */,
 				844B14EC27A19AEC00BEA4D9 /* Stack.cpp in Sources */,
+				84B2BA102802DEE200C01DA9 /* functor.cpp in Sources */,
 				844422A027B7785400AC454A /* Queue.cpp in Sources */,
 				84A029BF27B8AA7500ECA48F /* tabtenn0.cpp in Sources */,
 			);

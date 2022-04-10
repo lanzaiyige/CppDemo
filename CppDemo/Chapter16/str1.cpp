@@ -9,8 +9,15 @@
 #include "str1.h"
 #include <iostream>
 #include <string>
+#include <memory>
 
 using namespace std;
+
+void test_auto_ptr(string &str) {
+    unique_ptr<string> ps(new string(str));
+    str = *ps;
+    return;
+}
 
 void test_string() {
     string one("Lottery Winner!");
@@ -28,3 +35,4 @@ void test_string() {
         printf("equal size\n");
     }
 }
+
