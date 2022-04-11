@@ -27,6 +27,7 @@
 #include "vect1.h"
 #include "functor.h"
 #include "funadap.h"
+#include "strgst.h"
 
 using namespace std;
 
@@ -202,7 +203,8 @@ int main(int argc, const char * argv[]) {
 //    test_iterator();
 //    test_functor();
 //    test_transform_func();
-    test_func_adapter();
+//    test_func_adapter();
+    test_string_premutation();
     
     return 0;
 }

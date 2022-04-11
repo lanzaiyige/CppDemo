@@ -39,6 +39,7 @@
 		84EAED3827FDB60900DC781A /* RTTI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84EAED3627FDB60900DC781A /* RTTI.cpp */; };
 		84EAED3D27FF05BD00DC781A /* str1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84EAED3B27FF05BD00DC781A /* str1.cpp */; };
 		84EAED4028044E5E00DC781A /* funadap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84EAED3E28044E5E00DC781A /* funadap.cpp */; };
+		84EAED4328045A7B00DC781A /* strgst.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84EAED4128045A7B00DC781A /* strgst.cpp */; };
 		84F3B3AC27C0EE0F00F89516 /* acctabc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84F3B3AA27C0EE0F00F89516 /* acctabc.cpp */; };
 /* End PBXBuildFile section */
 
@@ -119,6 +120,8 @@
 		84EAED3C27FF05BD00DC781A /* str1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = str1.h; sourceTree = "<group>"; };
 		84EAED3E28044E5E00DC781A /* funadap.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = funadap.cpp; sourceTree = "<group>"; };
 		84EAED3F28044E5E00DC781A /* funadap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = funadap.h; sourceTree = "<group>"; };
+		84EAED4128045A7B00DC781A /* strgst.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = strgst.cpp; sourceTree = "<group>"; };
+		84EAED4228045A7B00DC781A /* strgst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = strgst.h; sourceTree = "<group>"; };
 		84F3B3AA27C0EE0F00F89516 /* acctabc.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = acctabc.cpp; sourceTree = "<group>"; };
 		84F3B3AB27C0EE0F00F89516 /* acctabc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = acctabc.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -258,6 +261,8 @@
 				84B2BA0F2802DEE200C01DA9 /* functor.h */,
 				84EAED3E28044E5E00DC781A /* funadap.cpp */,
 				84EAED3F28044E5E00DC781A /* funadap.h */,
+				84EAED4128045A7B00DC781A /* strgst.cpp */,
+				84EAED4228045A7B00DC781A /* strgst.h */,
 			);
 			path = Chapter16;
 			sourceTree = "<group>";
@@ -335,6 +340,7 @@
 				8454B00F279EF21D00F15AC9 /* main.cpp in Sources */,
 				84EAED4028044E5E00DC781A /* funadap.cpp in Sources */,
 				84B2BA0D28027F2700C01DA9 /* vect1.cpp in Sources */,
+				84EAED4328045A7B00DC781A /* strgst.cpp in Sources */,
 				84D2E14F27C9E431001986B5 /* dma.cpp in Sources */,
 				84A029C227B8CD7500ECA48F /* brass.cpp in Sources */,
 				84CFA89E27B6836F00148A46 /* placenew1.cpp in Sources */,
