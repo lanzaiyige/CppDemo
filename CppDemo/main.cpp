@@ -26,6 +26,7 @@
 #include "fowl.h"
 #include "vect1.h"
 #include "functor.h"
+#include "funadap.h"
 
 using namespace std;
 
@@ -199,7 +200,9 @@ int main(int argc, const char * argv[]) {
 //    test_unique_ptr();
 //    test_vector();
 //    test_iterator();
-    test_functor();
+//    test_functor();
+//    test_transform_func();
+    test_func_adapter();
     
     return 0;
 }

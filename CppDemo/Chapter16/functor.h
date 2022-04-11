@@ -12,5 +12,6 @@
 #include <stdio.h>
 
 void test_functor();
+void test_transform_func();
 
 #endif /* functor_hpp */

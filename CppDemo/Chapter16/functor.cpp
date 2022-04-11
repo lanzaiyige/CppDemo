@@ -10,7 +10,9 @@
 #include <iostream>
 #include <iterator>
 #include <list>
+#include <vector>
 #include <algorithm>
+#include <math.h>
 
 using namespace std;
 
@@ -34,9 +36,26 @@ void test_functor() {
     cout << "Origin lists:\n";
     for_each(yadayada.begin(), yadayada.end(), output);
     cout << endl;
-    for_each(etcetera.begin(), yadayada.end(), output);
+    for_each(etcetera.begin(), etcetera.end(), output);
     cout << endl;
     
     yadayada.remove_if(f100);
     etcetera.remove_if(TooBig<int>(200));
+    
+    for_each(yadayada.begin(), yadayada.end(), output);
+    cout << endl;
+    for_each(etcetera.begin(), etcetera.end(), output);
+    cout << endl;
+}
+
+double sqrr(double num) {
+    return sqrt(num);
+}
+
+void test_transform_func() {
+    const int LIM = 5;
+    double arr[LIM] = {36, 39, 42, 45, 48};
+    vector<double> gr8(arr, arr + LIM);
+    ostream_iterator<double, char> out(cout, " \t");
+    transform(gr8.begin(), gr8.end(), out, sqrr);
 }
