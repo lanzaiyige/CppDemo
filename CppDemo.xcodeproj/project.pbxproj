@@ -41,6 +41,7 @@
 		84EAED4028044E5E00DC781A /* funadap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84EAED3E28044E5E00DC781A /* funadap.cpp */; };
 		84EAED4328045A7B00DC781A /* strgst.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84EAED4128045A7B00DC781A /* strgst.cpp */; };
 		84F3B3AC27C0EE0F00F89516 /* acctabc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84F3B3AA27C0EE0F00F89516 /* acctabc.cpp */; };
+		84FF982C2805A1A700333C94 /* usealgo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84FF982A2805A1A700333C94 /* usealgo.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -124,6 +125,8 @@
 		84EAED4228045A7B00DC781A /* strgst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = strgst.h; sourceTree = "<group>"; };
 		84F3B3AA27C0EE0F00F89516 /* acctabc.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = acctabc.cpp; sourceTree = "<group>"; };
 		84F3B3AB27C0EE0F00F89516 /* acctabc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = acctabc.h; sourceTree = "<group>"; };
+		84FF982A2805A1A700333C94 /* usealgo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = usealgo.cpp; sourceTree = "<group>"; };
+		84FF982B2805A1A700333C94 /* usealgo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = usealgo.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -263,6 +266,8 @@
 				84EAED3F28044E5E00DC781A /* funadap.h */,
 				84EAED4128045A7B00DC781A /* strgst.cpp */,
 				84EAED4228045A7B00DC781A /* strgst.h */,
+				84FF982A2805A1A700333C94 /* usealgo.cpp */,
+				84FF982B2805A1A700333C94 /* usealgo.h */,
 			);
 			path = Chapter16;
 			sourceTree = "<group>";
@@ -353,6 +358,7 @@
 				84AABFC7280136B7002B3D96 /* fowl.cpp in Sources */,
 				84EAED2F27F71FAA00DC781A /* Person.cpp in Sources */,
 				84AC74D127F01BA8008099C5 /* winec.cpp in Sources */,
+				84FF982C2805A1A700333C94 /* usealgo.cpp in Sources */,
 				84CA589527FA94DC0029255E /* error.cpp in Sources */,
 				844B14EC27A19AEC00BEA4D9 /* Stack.cpp in Sources */,
 				84B2BA102802DEE200C01DA9 /* functor.cpp in Sources */,

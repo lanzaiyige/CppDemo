@@ -12,5 +12,6 @@
 #include <stdio.h>
 
 void test_string_premutation();
+void test_list_rmv();
 
 #endif /* strgst_hpp */
