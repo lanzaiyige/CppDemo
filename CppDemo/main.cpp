@@ -28,6 +28,7 @@
 #include "functor.h"
 #include "funadap.h"
 #include "strgst.h"
+#include "usealgo.h"
 
 using namespace std;
 
@@ -205,7 +206,8 @@ int main(int argc, const char * argv[]) {
 //    test_transform_func();
 //    test_func_adapter();
 //    test_string_premutation();
-    test_list_rmv();
+//    test_list_rmv();
+    inputData();
     
     return 0;
 }

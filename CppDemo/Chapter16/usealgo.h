@@ -11,4 +11,6 @@
 
 #include <stdio.h>
 
+void inputData();
+
 #endif /* usealgo_hpp */
