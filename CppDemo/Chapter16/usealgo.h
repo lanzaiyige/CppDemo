@@ -13,4 +13,12 @@
 
 void inputData();
 
+void test_execrise();
+
+void print_reduce();
+
+void print_lotto(int total, int count);
+
+void test_time();
+
 #endif /* usealgo_hpp */

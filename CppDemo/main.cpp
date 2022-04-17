@@ -207,7 +207,18 @@ int main(int argc, const char * argv[]) {
 //    test_func_adapter();
 //    test_string_premutation();
 //    test_list_rmv();
-    inputData();
+//    inputData();
+//    test_execrise();
+//    print_reduce();
+    
+//    long array[] = {5,7,3,4,1,2,3,4,1};
+//    int size = sizeof(array) / sizeof(long);
+    
+//    for (int i = 0; i < 50; i++) {
+//        print_lotto(51,10);
+//        cout << endl;
+//    }
+    test_time();
     
     return 0;
 }
