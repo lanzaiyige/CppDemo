@@ -29,6 +29,7 @@
 #include "funadap.h"
 #include "strgst.h"
 #include "usealgo.h"
+#include <initializer_list>
 
 using namespace std;
 
@@ -183,6 +184,26 @@ void test_typeid() {
     }
 }
 
+double sum(std::initializer_list<double> il) {
+    double t = 0;
+    for (auto p = il.begin(); p != il.end(); p++) {
+        t += *p;
+    }
+    return t;
+}
+
+template<typename T, typename U>
+auto eff(T t, U u) -> decltype(t*u) {
+    
+}
+
+void test_C11Standard() {
+    char c1 = 1.57e27;
+    double total = sum({1,2,3,4,5});
+    printf("%f\n", total);
+//    char c2 {1.57e27}; complie error on c++11
+}
+
 int main(int argc, const char * argv[]) {
 //    friendtest();
 //    testString();
@@ -218,7 +239,8 @@ int main(int argc, const char * argv[]) {
 //        print_lotto(51,10);
 //        cout << endl;
 //    }
-    test_time();
+//    test_time();
+    test_C11Standard();
     
     return 0;
 }
