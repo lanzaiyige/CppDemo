@@ -31,6 +31,7 @@
 #include "strgst.h"
 #include "usealgo.h"
 #include <initializer_list>
+#include "useless.h"
 
 using namespace std;
 
@@ -231,6 +232,20 @@ void rvaltest() {
     cout << a << " " << &a << endl;
 }
 
+void test_useless() {
+    Useless one(10 ,'x');
+    Useless two = one;
+    Useless three(20, 'o');
+    Useless four(one + three);
+    
+    one.ShowData();
+    two.ShowData();
+    three.ShowData();
+    four.ShowData();
+    
+//    printf("haha");
+}
+
 int main(int argc, const char * argv[]) {
 //    friendtest();
 //    testString();
@@ -268,7 +283,8 @@ int main(int argc, const char * argv[]) {
 //    }
 //    test_time();
 //    test_C11Standard();
-    rvaltest();
+//    rvaltest();
+    test_useless();
     
     return 0;
 }

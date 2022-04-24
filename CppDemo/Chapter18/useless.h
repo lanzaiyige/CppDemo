@@ -28,6 +28,8 @@ public:
     Useless(Useless &&u);
     ~Useless();
     Useless operator+(const Useless &u) const;
+    Useless &operator=(const Useless &u);
+    Useless &operator=(Useless &&u);
     void ShowData() const;
 };
 

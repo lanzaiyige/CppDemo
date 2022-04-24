@@ -75,6 +75,37 @@ Useless Useless::operator+(const Useless &u) const {
     return temp;
 }
 
+Useless &Useless::operator=(const Useless &u) {
+    if (this == &u) {
+        return *this;
+    }
+    
+    delete [] pc;
+    n = u.n;
+    for (int i = 0; i < n; i++) {
+        pc[i] = u.pc[i];
+    }
+    return *this;
+}
+
+Useless &Useless::operator=(Useless &&u) {
+    if (this == &u) {
+        return *this;
+    }
+    
+    delete [] pc;
+    n = u.n;
+    pc = u.pc;
+    u.n = 0;
+    u.pc = nullptr;
+    return *this;
+}
+
 void Useless::ShowObject() const {
+    cout << "count: " << n;
+    cout << " Data addr: " << (void *)pc << endl;
+}
+
+void Useless::ShowData() const {
     
 }
