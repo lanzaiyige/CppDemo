@@ -16,7 +16,7 @@ Demo::Demo() {
         cout << "init" << endl;
     } catch (bad_alloc &ba) {
         cout << "exception" << endl;
-        exit(EXIT_FAILURE);
+//        exit(EXIT_FAILURE);
     }
     cout << "success" << endl;
     pb[0].stuff[0] = 4;

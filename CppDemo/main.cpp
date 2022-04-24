@@ -7,6 +7,7 @@
 //
 
 #include <iostream>
+#include <vector>
 #include "Stock00.h"
 #include "mytime.h"
 #include "placenew1.h"
@@ -197,11 +198,37 @@ auto eff(T t, U u) -> decltype(t*u) {
     
 }
 
+inline double f(double tf) {
+    return 5.0 * (tf - 2) / 4.0;
+}
+
 void test_C11Standard() {
     char c1 = 1.57e27;
     double total = sum({1,2,3,4,5});
     printf("%f\n", total);
 //    char c2 {1.57e27}; complie error on c++11
+    
+    vector<int> v(6);
+    for (int &x : v) {
+        x = rand();
+    }
+    auto iter = v.begin();
+    while (iter != v.end()) {
+        printf("%i\n", *iter);
+        iter++;
+    }
+}
+
+void rvaltest() {
+    double x = 3;
+    double && y = 4;
+    double && z = 5 * x + 10;
+    double && a = f(z);
+    
+    cout << x << " " << &x << endl;
+    cout << y << " " << &y << endl;
+    cout << z << " " << &z << endl;
+    cout << a << " " << &a << endl;
 }
 
 int main(int argc, const char * argv[]) {
@@ -240,7 +267,8 @@ int main(int argc, const char * argv[]) {
 //        cout << endl;
 //    }
 //    test_time();
-    test_C11Standard();
+//    test_C11Standard();
+    rvaltest();
     
     return 0;
 }

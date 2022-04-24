@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		841BF4772811866000F28291 /* useless.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 841BF4752811866000F28291 /* useless.cpp */; };
 		844422A027B7785400AC454A /* Queue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8444229E27B7785400AC454A /* Queue.cpp */; };
 		844422A627B7C63600AC454A /* Cow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 844422A427B7C63600AC454A /* Cow.cpp */; };
 		844B14EC27A19AEC00BEA4D9 /* Stack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 844B14EA27A19AEC00BEA4D9 /* Stack.cpp */; };
@@ -57,6 +58,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		841BF4752811866000F28291 /* useless.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = useless.cpp; sourceTree = "<group>"; };
+		841BF4762811866000F28291 /* useless.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = useless.h; sourceTree = "<group>"; };
 		8444229E27B7785400AC454A /* Queue.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Queue.cpp; sourceTree = "<group>"; };
 		8444229F27B7785400AC454A /* Queue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Queue.h; sourceTree = "<group>"; };
 		844422A427B7C63600AC454A /* Cow.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Cow.cpp; sourceTree = "<group>"; };
@@ -143,6 +146,8 @@
 		841BF47328102D2D00F28291 /* Chapter18 */ = {
 			isa = PBXGroup;
 			children = (
+				841BF4752811866000F28291 /* useless.cpp */,
+				841BF4762811866000F28291 /* useless.h */,
 			);
 			path = Chapter18;
 			sourceTree = "<group>";
@@ -361,6 +366,7 @@
 				84A9B35A27DD965100594CC6 /* Worker.cpp in Sources */,
 				84DEF9FD27CB78E4002ED765 /* Port.cpp in Sources */,
 				84CFA89A27B5354200148A46 /* String.cpp in Sources */,
+				841BF4772811866000F28291 /* useless.cpp in Sources */,
 				84CA589B27FAF2000029255E /* sales.cpp in Sources */,
 				844422A627B7C63600AC454A /* Cow.cpp in Sources */,
 				84AABFC7280136B7002B3D96 /* fowl.cpp in Sources */,
