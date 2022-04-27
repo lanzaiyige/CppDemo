@@ -32,6 +32,7 @@
 #include "usealgo.h"
 #include <initializer_list>
 #include "useless.h"
+#include "Someclass.h"
 
 using namespace std;
 
@@ -246,6 +247,11 @@ void test_useless() {
 //    printf("haha");
 }
 
+void test_somecls() {
+    Someclass sc;
+    // sc.redo(5); // Complie error : Call to deleted member function 'redo'
+}
+
 int main(int argc, const char * argv[]) {
 //    friendtest();
 //    testString();
@@ -284,7 +290,7 @@ int main(int argc, const char * argv[]) {
 //    test_time();
 //    test_C11Standard();
 //    rvaltest();
-    test_useless();
+//    test_useless();
     
     return 0;
 }
