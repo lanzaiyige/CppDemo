@@ -33,6 +33,7 @@
 #include <initializer_list>
 #include "useless.h"
 #include "Someclass.h"
+#include "lambda.h"
 
 using namespace std;
 
@@ -291,6 +292,7 @@ int main(int argc, const char * argv[]) {
 //    test_C11Standard();
 //    rvaltest();
 //    test_useless();
+    test_lambda();
     
     return 0;
 }

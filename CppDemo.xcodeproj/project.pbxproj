@@ -15,6 +15,9 @@
 		8454B017279EF24500F15AC9 /* Stock00.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8454B015279EF24500F15AC9 /* Stock00.cpp */; };
 		8457468227D4E88E00724BF2 /* Student.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8457468027D4E88E00724BF2 /* Student.cpp */; };
 		84591CCC27B2AD8C007FF8DA /* stringbad.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84591CCA27B2AD8C007FF8DA /* stringbad.cpp */; };
+		848B4F6E281B8ACE00FE70D9 /* Lambda.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 848B4F6C281B8ACE00FE70D9 /* Lambda.cpp */; };
+		848B4F71281BBC8800FE70D9 /* somedefs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 848B4F6F281BBC8800FE70D9 /* somedefs.cpp */; };
+		848B4F74281BC2A200FE70D9 /* wrapped.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 848B4F72281BC2A200FE70D9 /* wrapped.cpp */; };
 		849FB9ED27EED79B00B601BE /* Wine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 849FB9EA27EED79B00B601BE /* Wine.cpp */; };
 		84A029BF27B8AA7500ECA48F /* tabtenn0.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84A029BD27B8AA7500ECA48F /* tabtenn0.cpp */; };
 		84A029C227B8CD7500ECA48F /* brass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84A029C027B8CD7500ECA48F /* brass.cpp */; };
@@ -76,6 +79,12 @@
 		8457468127D4E88E00724BF2 /* Student.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
 		84591CCA27B2AD8C007FF8DA /* stringbad.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = stringbad.cpp; sourceTree = "<group>"; };
 		84591CCB27B2AD8C007FF8DA /* stringbad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stringbad.h; sourceTree = "<group>"; };
+		848B4F6C281B8ACE00FE70D9 /* Lambda.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Lambda.cpp; sourceTree = "<group>"; };
+		848B4F6D281B8ACE00FE70D9 /* Lambda.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Lambda.h; sourceTree = "<group>"; };
+		848B4F6F281BBC8800FE70D9 /* somedefs.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = somedefs.cpp; sourceTree = "<group>"; };
+		848B4F70281BBC8800FE70D9 /* somedefs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = somedefs.h; sourceTree = "<group>"; };
+		848B4F72281BC2A200FE70D9 /* wrapped.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = wrapped.cpp; sourceTree = "<group>"; };
+		848B4F73281BC2A200FE70D9 /* wrapped.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = wrapped.h; sourceTree = "<group>"; };
 		849FB9EA27EED79B00B601BE /* Wine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Wine.cpp; sourceTree = "<group>"; };
 		849FB9EB27EED79B00B601BE /* Wine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Wine.h; sourceTree = "<group>"; };
 		84A029BD27B8AA7500ECA48F /* tabtenn0.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = tabtenn0.cpp; sourceTree = "<group>"; };
@@ -158,6 +167,12 @@
 				84C24C9528196E9D003D2F46 /* Someclass.h */,
 				84C24C9728197030003D2F46 /* Notes.cpp */,
 				84C24C9828197030003D2F46 /* Notes.h */,
+				848B4F6C281B8ACE00FE70D9 /* Lambda.cpp */,
+				848B4F6D281B8ACE00FE70D9 /* Lambda.h */,
+				848B4F6F281BBC8800FE70D9 /* somedefs.cpp */,
+				848B4F70281BBC8800FE70D9 /* somedefs.h */,
+				848B4F72281BC2A200FE70D9 /* wrapped.cpp */,
+				848B4F73281BC2A200FE70D9 /* wrapped.h */,
 			);
 			path = Chapter18;
 			sourceTree = "<group>";
@@ -352,6 +367,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				848B4F6E281B8ACE00FE70D9 /* Lambda.cpp in Sources */,
 				84EAED3827FDB60900DC781A /* RTTI.cpp in Sources */,
 				84C262D327B0D0CA00EAC8F7 /* mytime.cpp in Sources */,
 				84CA589827FAEEEC0029255E /* newexcp.cpp in Sources */,
@@ -370,6 +386,7 @@
 				84EAED4028044E5E00DC781A /* funadap.cpp in Sources */,
 				84B2BA0D28027F2700C01DA9 /* vect1.cpp in Sources */,
 				84EAED4328045A7B00DC781A /* strgst.cpp in Sources */,
+				848B4F71281BBC8800FE70D9 /* somedefs.cpp in Sources */,
 				84D2E14F27C9E431001986B5 /* dma.cpp in Sources */,
 				84A029C227B8CD7500ECA48F /* brass.cpp in Sources */,
 				84CFA89E27B6836F00148A46 /* placenew1.cpp in Sources */,
@@ -381,6 +398,7 @@
 				84CA589B27FAF2000029255E /* sales.cpp in Sources */,
 				84C24C9928197030003D2F46 /* Notes.cpp in Sources */,
 				844422A627B7C63600AC454A /* Cow.cpp in Sources */,
+				848B4F74281BC2A200FE70D9 /* wrapped.cpp in Sources */,
 				84AABFC7280136B7002B3D96 /* fowl.cpp in Sources */,
 				84EAED2F27F71FAA00DC781A /* Person.cpp in Sources */,
 				84AC74D127F01BA8008099C5 /* winec.cpp in Sources */,

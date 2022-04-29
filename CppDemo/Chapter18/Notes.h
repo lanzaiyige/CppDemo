@@ -31,4 +31,5 @@ Notes::Notes() : Notes(0, 0.01, "Ph") { }
 Notes::Notes(int kk) : Notes(kk, 0.01, "Ah") { }
 Notes::Notes(int kk, double xx) : Notes(kk, xx, "Uh") { }
 
+
 #endif /* Notes_hpp */
