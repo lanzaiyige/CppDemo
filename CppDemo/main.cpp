@@ -34,6 +34,7 @@
 #include "useless.h"
 #include "Someclass.h"
 #include "lambda.h"
+#include "wrapped.h"
 
 using namespace std;
 
@@ -292,7 +293,8 @@ int main(int argc, const char * argv[]) {
 //    test_C11Standard();
 //    rvaltest();
 //    test_useless();
-    test_lambda();
+//    test_lambda();
+    test_exercise2();
     
     return 0;
 }

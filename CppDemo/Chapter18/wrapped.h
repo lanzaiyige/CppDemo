@@ -15,5 +15,6 @@
 #include "somedefs.h"
 
 void test_wrapped();
+void test_exercise2();
 
 #endif /* wrapped_hpp */
