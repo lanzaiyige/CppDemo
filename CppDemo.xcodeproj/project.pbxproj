@@ -30,6 +30,7 @@
 		84AF122327F951BB000FFBD9 /* Queue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84AF122127F951BB000FFBD9 /* Queue.cpp */; };
 		84B2BA0D28027F2700C01DA9 /* vect1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84B2BA0B28027F2700C01DA9 /* vect1.cpp */; };
 		84B2BA102802DEE200C01DA9 /* functor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84B2BA0E2802DEE200C01DA9 /* functor.cpp */; };
+		84B7D2BD282A8B52007A2EB3 /* iterator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84B7D2BB282A8B52007A2EB3 /* iterator.cpp */; };
 		84C24C9628196E9D003D2F46 /* Someclass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84C24C9428196E9D003D2F46 /* Someclass.cpp */; };
 		84C24C9928197030003D2F46 /* Notes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84C24C9728197030003D2F46 /* Notes.cpp */; };
 		84C262D327B0D0CA00EAC8F7 /* mytime.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84C262D127B0D0CA00EAC8F7 /* mytime.cpp */; };
@@ -110,6 +111,9 @@
 		84B2BA0C28027F2700C01DA9 /* vect1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vect1.h; sourceTree = "<group>"; };
 		84B2BA0E2802DEE200C01DA9 /* functor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = functor.cpp; sourceTree = "<group>"; };
 		84B2BA0F2802DEE200C01DA9 /* functor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = functor.h; sourceTree = "<group>"; };
+		84B7D25F28293AE0007A2EB3 /* type_traits.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = type_traits.h; sourceTree = "<group>"; };
+		84B7D2BB282A8B52007A2EB3 /* iterator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = iterator.cpp; sourceTree = "<group>"; };
+		84B7D2BC282A8B52007A2EB3 /* iterator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iterator.h; sourceTree = "<group>"; };
 		84C24C9428196E9D003D2F46 /* Someclass.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Someclass.cpp; sourceTree = "<group>"; };
 		84C24C9528196E9D003D2F46 /* Someclass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Someclass.h; sourceTree = "<group>"; };
 		84C24C9728197030003D2F46 /* Notes.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Notes.cpp; sourceTree = "<group>"; };
@@ -201,6 +205,7 @@
 		8454B00D279EF21D00F15AC9 /* CppDemo */ = {
 			isa = PBXGroup;
 			children = (
+				84B7D25E28293A43007A2EB3 /* mySTL */,
 				841BF47328102D2D00F28291 /* Chapter18 */,
 				84EAED3A27FF05AC00DC781A /* Chapter16 */,
 				84EAED3027F8721B00DC781A /* Chapter15 */,
@@ -273,6 +278,16 @@
 				84A029BE27B8AA7500ECA48F /* tabtenn0.h */,
 			);
 			path = Chapter13;
+			sourceTree = "<group>";
+		};
+		84B7D25E28293A43007A2EB3 /* mySTL */ = {
+			isa = PBXGroup;
+			children = (
+				84B7D25F28293AE0007A2EB3 /* type_traits.h */,
+				84B7D2BB282A8B52007A2EB3 /* iterator.cpp */,
+				84B7D2BC282A8B52007A2EB3 /* iterator.h */,
+			);
+			path = mySTL;
 			sourceTree = "<group>";
 		};
 		84EAED3027F8721B00DC781A /* Chapter15 */ = {
@@ -411,6 +426,7 @@
 				84FF982C2805A1A700333C94 /* usealgo.cpp in Sources */,
 				84CA589527FA94DC0029255E /* error.cpp in Sources */,
 				844B14EC27A19AEC00BEA4D9 /* Stack.cpp in Sources */,
+				84B7D2BD282A8B52007A2EB3 /* iterator.cpp in Sources */,
 				84B2BA102802DEE200C01DA9 /* functor.cpp in Sources */,
 				844422A027B7785400AC454A /* Queue.cpp in Sources */,
 				84A029BF27B8AA7500ECA48F /* tabtenn0.cpp in Sources */,
