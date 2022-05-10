@@ -31,6 +31,7 @@
 		84B2BA0D28027F2700C01DA9 /* vect1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84B2BA0B28027F2700C01DA9 /* vect1.cpp */; };
 		84B2BA102802DEE200C01DA9 /* functor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84B2BA0E2802DEE200C01DA9 /* functor.cpp */; };
 		84B7D2BD282A8B52007A2EB3 /* iterator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84B7D2BB282A8B52007A2EB3 /* iterator.cpp */; };
+		84BC839A2822D51000F243B4 /* Example.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84BC83982822D51000F243B4 /* Example.cpp */; };
 		84C24C9628196E9D003D2F46 /* Someclass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84C24C9428196E9D003D2F46 /* Someclass.cpp */; };
 		84C24C9928197030003D2F46 /* Notes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84C24C9728197030003D2F46 /* Notes.cpp */; };
 		84C262D327B0D0CA00EAC8F7 /* mytime.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84C262D127B0D0CA00EAC8F7 /* mytime.cpp */; };
@@ -114,6 +115,8 @@
 		84B7D25F28293AE0007A2EB3 /* type_traits.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = type_traits.h; sourceTree = "<group>"; };
 		84B7D2BB282A8B52007A2EB3 /* iterator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = iterator.cpp; sourceTree = "<group>"; };
 		84B7D2BC282A8B52007A2EB3 /* iterator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iterator.h; sourceTree = "<group>"; };
+		84BC83982822D51000F243B4 /* Example.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Example.cpp; sourceTree = "<group>"; };
+		84BC83992822D51000F243B4 /* Example.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Example.h; sourceTree = "<group>"; };
 		84C24C9428196E9D003D2F46 /* Someclass.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Someclass.cpp; sourceTree = "<group>"; };
 		84C24C9528196E9D003D2F46 /* Someclass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Someclass.h; sourceTree = "<group>"; };
 		84C24C9728197030003D2F46 /* Notes.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Notes.cpp; sourceTree = "<group>"; };
@@ -206,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				84B7D25E28293A43007A2EB3 /* mySTL */,
+				84BC83972822D50000F243B4 /* Appendix */,
 				841BF47328102D2D00F28291 /* Chapter18 */,
 				84EAED3A27FF05AC00DC781A /* Chapter16 */,
 				84EAED3027F8721B00DC781A /* Chapter15 */,
@@ -288,6 +292,13 @@
 				84B7D2BC282A8B52007A2EB3 /* iterator.h */,
 			);
 			path = mySTL;
+		84BC83972822D50000F243B4 /* Appendix */ = {
+			isa = PBXGroup;
+			children = (
+				84BC83982822D51000F243B4 /* Example.cpp */,
+				84BC83992822D51000F243B4 /* Example.h */,
+			);
+			path = Appendix;
 			sourceTree = "<group>";
 		};
 		84EAED3027F8721B00DC781A /* Chapter15 */ = {
@@ -393,6 +404,7 @@
 				84CA589827FAEEEC0029255E /* newexcp.cpp in Sources */,
 				84EAED3D27FF05BD00DC781A /* str1.cpp in Sources */,
 				84F3B3AC27C0EE0F00F89516 /* acctabc.cpp in Sources */,
+				84BC839A2822D51000F243B4 /* Example.cpp in Sources */,
 				8454B017279EF24500F15AC9 /* Stock00.cpp in Sources */,
 				8457468227D4E88E00724BF2 /* Student.cpp in Sources */,
 				84A7A86E27DDEAA5001E2CD8 /* stcktp.cpp in Sources */,
@@ -550,6 +562,7 @@
 		8454B013279EF21D00F15AC9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CODE_SIGN_STYLE = Automatic;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -559,6 +572,7 @@
 		8454B014279EF21D00F15AC9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CODE_SIGN_STYLE = Automatic;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_NAME = "$(TARGET_NAME)";

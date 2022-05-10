@@ -30,8 +30,8 @@ public:
 
 void test_smart_ptr() {
     {
-        auto_ptr<Report> ps(new Report("this is auto ptr"));
-        ps->comment();
+//        auto_ptr<Report> ps(new Report("this is auto ptr"));
+//        ps->comment();
     }
     
     {

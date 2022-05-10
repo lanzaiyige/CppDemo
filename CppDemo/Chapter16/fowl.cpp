@@ -14,18 +14,18 @@
 using namespace std;
 
 void test_fowl() {
-    auto_ptr<string> films[5] = {
-        auto_ptr<string> (new string("A")),
-        auto_ptr<string> (new string("B")),
-        auto_ptr<string> (new string("C")),
-        auto_ptr<string> (new string("D")),
-        auto_ptr<string> (new string("E"))
-    };
-    auto_ptr<string> pwin = films[2];
-    cout << "ready for cout" << endl;
-    for (int i = 0; i < 5; i++) {
-        cout << *films[i] << endl;
-    }
+//    auto_ptr<string> films[5] = {
+//        auto_ptr<string> (new string("A")),
+//        auto_ptr<string> (new string("B")),
+//        auto_ptr<string> (new string("C")),
+//        auto_ptr<string> (new string("D")),
+//        auto_ptr<string> (new string("E"))
+//    };
+//    auto_ptr<string> pwin = films[2];
+//    cout << "ready for cout" << endl;
+//    for (int i = 0; i < 5; i++) {
+//        cout << *films[i] << endl;
+//    }
 }
 
 void test_fowl_shared() {
@@ -44,8 +44,8 @@ void test_fowl_shared() {
 }
 
 void test_unique_ptr() {
-    auto w = make_unique<string>();
-//    auto w1 = w;
-    auto w1 = std::move(w);
-    printf("xixi");
+//    auto w = make_unique<string>();
+////    auto w1 = w;
+//    auto w1 = std::move(w);
+//    printf("xixi");
 }
