@@ -68,6 +68,37 @@ std::is_convertible<typename Iterator::iterator_category, output_iterator_tag>::
 template <class Iterator>
 struct iterator_traits : public iterator_traits_helper<Iterator, has_iterator_cat<Iterator>::value> {};
 
+template <class T>
+struct iterator_traits<T *>
+{
+    typedef random_access_iterator_tag      iterator_category;
+    typedef T                               value_type;
+    typedef T*                              pointer;
+    typedef T&                              reference;
+    typedef ptrdiff_t                       difference_type;
+};
+
+template <class T, class U, bool = has_iterator_cat<iterator_traits<T>>::value>
+struct has_iterator_cat_of : public mystl::m_bool_constant<std::is_convertible<typename iterator_traits<T>::iterator_category, U>::value> {};
+
+template <class T, class U>
+struct has_iterator_cat_of<T, U, false> : public mystl::m_false_type {};
+
+template <class Iter>
+struct is_input_iterator : public has_iterator_cat_of<Iter, input_iterator_tag> {};
+
+template <class Iter>
+struct is_output_iterator : public has_iterator_cat_of<Iter, output_iterator_tag> {};
+
+template <class Iter>
+struct is_forward_iterator : public has_iterator_cat_of<Iter, forward_iterator_tag> {};
+
+template <class Iter>
+struct is_bidirectional_iterator : public has_iterator_cat_of<Iter, bidirectional_iterator_tag> {};
+
+template <class Iter>
+struct is_random_access_iterator : public has_iterator_cat_of<Iter, random_access_iterator_tag> {};
+
 
 }
 

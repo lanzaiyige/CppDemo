@@ -19,10 +19,10 @@ struct m_integral_constant {
 };
 
 template <bool b>
-using m_bool_contant = m_integral_constant<bool, b>;
+using m_bool_constant = m_integral_constant<bool, b>;
 
-typedef m_bool_contant<true> m_true_type;
-typedef m_bool_contant<false> m_false_type;
+typedef m_bool_constant<true> m_true_type;
+typedef m_bool_constant<false> m_false_type;
 
 template <class T1, class T2>
 struct pair;
