@@ -99,6 +99,141 @@ struct is_bidirectional_iterator : public has_iterator_cat_of<Iter, bidirectiona
 template <class Iter>
 struct is_random_access_iterator : public has_iterator_cat_of<Iter, random_access_iterator_tag> {};
 
+template <class Iter>
+struct is_iterator :
+public mystl::m_bool_constant<is_input_iterator<Iter>::value ||
+is_output_iterator<Iter>::value> {};
+
+template <class Iterator>
+typename iterator_traits<Iterator>::iterator_category
+iterator_category(const Iterator&) {
+    typedef typename iterator_traits<Iterator>::iterator_category Category;
+    return Category();
+};
+
+template <class Iterator>
+typename iterator_traits<Iterator>::difference_type*
+distance_type(const Iterator &) {
+    return static_cast<typename iterator_traits<Iterator>::difference_type*>(0);
+}
+
+template <class InputIterator>
+typename iterator_traits<InputIterator>::difference_type
+distance_dispatch(InputIterator first, InputIterator last, input_iterator_tag)
+{
+    typename iterator_traits<InputIterator>::difference_type n = 0;
+    while (first != last) {
+        ++first;
+        ++n;
+    }
+    return n;
+}
+
+template <class BidirectionalIterator, class Distance>
+void advance_dispatch(BidirectionalIterator &i, Distance n, bidirectional_iterator_tag)
+{
+    if (n >= 0) {
+        while (n--) {
+            ++i;
+        }
+    } else {
+        while (n++) {
+            --i;
+        }
+    }
+}
+
+template <class RandomIter, class Distance>
+void advance_dispatch(RandomIter &i, Distance n, random_access_iterator_tag)
+{
+    i += n;
+}
+
+template <class InputIterator, class Distance>
+void advance(InputIterator &i, Distance n)
+{
+    advance_dispatch(i, n, iterator_category(i));
+}
+
+/*****************************************************************************************/
+
+template <class Iterator>
+class reverse_iterator
+{
+private:
+    Iterator current;
+    
+public:
+    typedef typename iterator_traits<Iterator>::iterator_category   iterator_category;
+    typedef typename iterator_traits<Iterator>::value_type          value_type;
+    typedef typename iterator_traits<Iterator>::difference_type     difference_type;
+    typedef typename iterator_traits<Iterator>::pointer             pointer;
+    typedef typename iterator_traits<Iterator>::reference           reference;
+    
+    typedef Iterator                    iterator_type;
+    typedef reverse_iterator<Iterator>  self;
+    
+public:
+    reverse_iterator() {}
+    explicit reverse_iterator(iterator_type i) : current(i) {}
+    reverse_iterator(const self& rhs) : current(rhs.current) {}
+    
+public:
+    iterator_type base() const { return current; }
+    
+    reference operator*() const {
+        auto temp = current;
+        return *--temp;
+    }
+    
+    pointer operator->() const {
+        return &(operator*());
+    }
+    
+    self& operator++() {
+        --current;
+        return *this;
+    }
+    
+    self operator++(int) {
+        self tmp = *this;
+        --current;
+        return tmp;
+    }
+    
+    self& operator--() {
+        ++current;
+        return *this;
+    }
+    
+    self operator--(int) {
+        self tmp = *this;
+        ++current;
+        return tmp;
+    }
+    
+    self& operator+=(difference_type n) {
+        current -= n;
+        return *this;
+    }
+    
+    self operator+=(difference_type n) const {
+        return self(current - n);
+    }
+    
+    self& operator-=(difference_type n) {
+        current += n;
+        return *this;
+    }
+    
+    self operator-=(difference_type n) const {
+        return self(current + n);
+    }
+    
+    reference operator[](difference_type n) const {
+        return *(*this + 1);
+    }
+};
 
 }
 
