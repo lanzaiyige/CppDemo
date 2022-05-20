@@ -12,7 +12,7 @@
 #include <cstddef>
 #include "type_traits.h"
 
-namespace mysql {
+namespace mystl {
 
 struct input_iterator_tag {};
 struct output_iterator_tag {};
@@ -231,9 +231,52 @@ public:
     }
     
     reference operator[](difference_type n) const {
-        return *(*this + 1);
+        return *(*this + n);
     }
 };
+
+template <class Iterator>
+typename reverse_iterator<Iterator>::difference_type
+operator-(const reverse_iterator<Iterator> &lhs, const reverse_iterator<Iterator> &rhs)
+{
+    return rhs.base() - lhs.base();
+}
+
+template <class Iterator>
+bool operator==(const reverse_iterator<Iterator> &lhs, const reverse_iterator<Iterator> &rhs)
+{
+    return rhs.base() == lhs.base();
+}
+
+template <class Iterator>
+bool operator!=(const reverse_iterator<Iterator> &lhs, const reverse_iterator<Iterator> &rhs)
+{
+    return !(rhs.base() == lhs.base());
+}
+
+template <class Iterator>
+bool operator<(const reverse_iterator<Iterator> &rhs, const reverse_iterator<Iterator> &lhs)
+{
+    return rhs.base() < lhs.base();
+}
+
+template <class Iterator>
+bool operator>(const reverse_iterator<Iterator> &lhs, const reverse_iterator<Iterator> &rhs)
+{
+    return rhs < lhs;
+}
+
+template <class Iterator>
+bool operator<=(const reverse_iterator<Iterator>& lhs, const reverse_iterator<Iterator>& rhs)
+{
+  return !(rhs < lhs);
+}
+
+template <class Iterator>
+bool operator>=(const reverse_iterator<Iterator>& lhs, const reverse_iterator<Iterator>& rhs)
+{
+  return !(lhs < rhs);
+}
 
 }
 

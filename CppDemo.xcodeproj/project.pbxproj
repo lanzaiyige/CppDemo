@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8449EC6D282AC720005FC931 /* iterator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8449EC0C282AC71F005FC931 /* iterator.cpp */; };
 		8449EC6E282AC720005FC931 /* Worker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8449EC12282AC71F005FC931 /* Worker.cpp */; };
 		8449EC6F282AC720005FC931 /* Student.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8449EC13282AC71F005FC931 /* Student.cpp */; };
 		8449EC70282AC720005FC931 /* stcktp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8449EC15282AC71F005FC931 /* stcktp.cpp */; };
@@ -51,7 +50,10 @@
 		8449EC96282AC720005FC931 /* brass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8449EC69282AC720005FC931 /* brass.cpp */; };
 		8449EC97282AC720005FC931 /* acctabc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8449EC6A282AC720005FC931 /* acctabc.cpp */; };
 		8449EC98282AC720005FC931 /* Port.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8449EC6C282AC720005FC931 /* Port.cpp */; };
+		846F70E92833CBCE0037EB0D /* iterator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 846F70E82833CBCE0037EB0D /* iterator.cpp */; };
+		846F70EC2833CC7C0037EB0D /* util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 846F70EA2833CC7C0037EB0D /* util.cpp */; };
 		84D46B45282AC28200F3EFA5 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84D46B44282AC28200F3EFA5 /* main.cpp */; };
+		84DA11652837B740007129DB /* algobase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84DA11632837B740007129DB /* algobase.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -67,7 +69,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		8449EC0C282AC71F005FC931 /* iterator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = iterator.cpp; sourceTree = "<group>"; };
 		8449EC0D282AC71F005FC931 /* type_traits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = type_traits.h; sourceTree = "<group>"; };
 		8449EC0E282AC71F005FC931 /* iterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iterator.h; sourceTree = "<group>"; };
 		8449EC10282AC71F005FC931 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
@@ -156,8 +157,13 @@
 		8449EC6A282AC720005FC931 /* acctabc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = acctabc.cpp; sourceTree = "<group>"; };
 		8449EC6B282AC720005FC931 /* tabtenn0.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tabtenn0.h; sourceTree = "<group>"; };
 		8449EC6C282AC720005FC931 /* Port.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Port.cpp; sourceTree = "<group>"; };
+		846F70E82833CBCE0037EB0D /* iterator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = iterator.cpp; sourceTree = "<group>"; };
+		846F70EA2833CC7C0037EB0D /* util.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = util.cpp; sourceTree = "<group>"; };
+		846F70EB2833CC7C0037EB0D /* util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
 		84D46B41282AC28200F3EFA5 /* CppDemo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CppDemo; sourceTree = BUILT_PRODUCTS_DIR; };
 		84D46B44282AC28200F3EFA5 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		84DA11632837B740007129DB /* algobase.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = algobase.cpp; sourceTree = "<group>"; };
+		84DA11642837B740007129DB /* algobase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = algobase.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,9 +180,13 @@
 		8449EC0B282AC71F005FC931 /* mySTL */ = {
 			isa = PBXGroup;
 			children = (
-				8449EC0C282AC71F005FC931 /* iterator.cpp */,
+				846F70E82833CBCE0037EB0D /* iterator.cpp */,
 				8449EC0E282AC71F005FC931 /* iterator.h */,
 				8449EC0D282AC71F005FC931 /* type_traits.h */,
+				846F70EA2833CC7C0037EB0D /* util.cpp */,
+				846F70EB2833CC7C0037EB0D /* util.h */,
+				84DA11632837B740007129DB /* algobase.cpp */,
+				84DA11642837B740007129DB /* algobase.h */,
 			);
 			path = mySTL;
 			sourceTree = "<group>";
@@ -418,15 +428,16 @@
 				8449EC82282AC720005FC931 /* mytime.cpp in Sources */,
 				8449EC8C282AC720005FC931 /* strgst.cpp in Sources */,
 				8449EC96282AC720005FC931 /* brass.cpp in Sources */,
+				846F70EC2833CC7C0037EB0D /* util.cpp in Sources */,
 				8449EC7C282AC720005FC931 /* useless.cpp in Sources */,
 				84D46B45282AC28200F3EFA5 /* main.cpp in Sources */,
 				8449EC79282AC720005FC931 /* tv.cpp in Sources */,
-				8449EC6D282AC720005FC931 /* iterator.cpp in Sources */,
 				8449EC98282AC720005FC931 /* Port.cpp in Sources */,
 				8449EC77282AC720005FC931 /* newexcp.cpp in Sources */,
 				8449EC81282AC720005FC931 /* Notes.cpp in Sources */,
 				8449EC84282AC720005FC931 /* String.cpp in Sources */,
 				8449EC6E282AC720005FC931 /* Worker.cpp in Sources */,
+				846F70E92833CBCE0037EB0D /* iterator.cpp in Sources */,
 				8449EC83282AC720005FC931 /* Stock00.cpp in Sources */,
 				8449EC6F282AC720005FC931 /* Student.cpp in Sources */,
 				8449EC7D282AC720005FC931 /* somedefs.cpp in Sources */,
@@ -456,6 +467,7 @@
 				8449EC76282AC720005FC931 /* RTTI.cpp in Sources */,
 				8449EC73282AC720005FC931 /* Queue01.cpp in Sources */,
 				8449EC97282AC720005FC931 /* acctabc.cpp in Sources */,
+				84DA11652837B740007129DB /* algobase.cpp in Sources */,
 				8449EC89282AC720005FC931 /* placenew1.cpp in Sources */,
 				8449EC7B282AC720005FC931 /* wrapped.cpp in Sources */,
 			);
@@ -576,7 +588,9 @@
 		84D46B49282AC28200F3EFA5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -584,7 +598,9 @@
 		84D46B4A282AC28200F3EFA5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

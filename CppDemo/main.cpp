@@ -8,6 +8,8 @@
 
 #include <iostream>
 #include <vector>
+#include <initializer_list>
+#include <set>
 #include "Stock00.h"
 #include "mytime.h"
 #include "placenew1.h"
@@ -31,7 +33,6 @@
 #include "funadap.h"
 #include "strgst.h"
 #include "usealgo.h"
-#include <initializer_list>
 #include "useless.h"
 #include "Someclass.h"
 #include "lambda.h"
@@ -255,7 +256,45 @@ void test_somecls() {
     // sc.redo(5); // Complie error : Call to deleted member function 'redo'
 }
 
+template <class T>
+struct MyIter {
+    typedef T value_type;
+    T* ptr;
+    MyIter(T *p = 0) : ptr(p) {}
+    T &operator*() const { return *ptr; }
+};
+
+template <class I, class T>
+void func_impl(I iter, T t) {
+    T tmp;
+}
+
+template <class I>
+inline void func(I iter) {
+    func_impl(iter, *iter);
+}
+
+void test_set() {
+    string system_class_name_array[] = {
+        "ABPersonViewController",
+        "ACAccount",
+        "ACAccountCredential",
+        "ACAccountStore",
+        "ADBannerView"
+    };
+    set<string> system_class_array = set<string>(system_class_name_array, system_class_name_array + sizeof(system_class_name_array) / sizeof(string));
+    
+    for (auto iter = system_class_array.begin(); iter != system_class_array.end(); iter++) {
+        string str = *iter;
+        printf("%s\n", str.c_str());
+    }
+}
+
 int main(int argc, const char * argv[]) {
+    test_set();
+    
+//    int i;
+//    func(&i);
 //    friendtest();
 //    testString();
 //    testStock();
@@ -295,7 +334,7 @@ int main(int argc, const char * argv[]) {
 //    rvaltest();
 //    test_useless();
 //    test_lambda();
-    test_exercise2();
+//    test_exercise2();
     
     return 0;
 }
