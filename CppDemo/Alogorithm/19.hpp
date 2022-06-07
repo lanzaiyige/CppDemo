@@ -25,8 +25,9 @@ public:
     // leetcode 23
     ListNode* mergeKLists(ListNode lists[]);
     
-    
     ListNode* findFromEnd(ListNode *head, int k);
+    
+    ListNode* removeFromEnd(ListNode *head, int n);
 };
 
 #endif /* _9_hpp */

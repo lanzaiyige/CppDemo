@@ -21,8 +21,25 @@ ListNode* Solution::removeNthFromEnd(ListNode *head, int n) {
 }
 
 ListNode* Solution::removeNthFromEnd1(ListNode *head, int n) {
+    ListNode *p1 = head;
+    ListNode *p2 = head;
+    for (int i = 0; i < n; i++) {
+        p1 = p1->next;
+    }
+    while (p1 != nullptr) {
+        p1 = p1->next;
+        p2 = p2->next;
+    }
     
-    return nullptr;
+    return p2;
+}
+
+ListNode* Solution::removeFromEnd(ListNode *head, int n) {
+    ListNode *dummy = new ListNode(-1);
+    ListNode *node = findFromEnd(dummy, n);
+    
+    
+    return dummy;
 }
 
 
