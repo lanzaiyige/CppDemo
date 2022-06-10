@@ -36,8 +36,10 @@ ListNode* Solution::removeNthFromEnd1(ListNode *head, int n) {
 
 ListNode* Solution::removeFromEnd(ListNode *head, int n) {
     ListNode *dummy = new ListNode(-1);
-    ListNode *node = findFromEnd(dummy, n);
-    
+    ListNode *node = findFromEnd(dummy, n + 1);
+    if (node != nullptr) {
+        node->next = node->next->next;
+    }
     
     return dummy;
 }
@@ -80,6 +82,71 @@ ListNode* Solution::findFromEnd(ListNode *head, int k) {
     }
     
     return behind;
+}
+
+ListNode* Solution::middleNode(ListNode *head) {
+    ListNode *slow = head;
+    ListNode *fast = head;
+    while (fast != nullptr && fast->next != nullptr) {
+        slow = slow->next;
+        fast = fast->next->next;
+    }
+    
+    return slow;
+}
+
+bool Solution::hasCycle(ListNode *head) {
+    ListNode *slow = head, *fast = head;
+    while (fast != nullptr && fast->next != nullptr) {
+        slow = slow->next;
+        fast = fast->next->next;
+        if (slow == fast) {
+            return true;
+        }
+    }
+    
+    return false;
+}
+
+ListNode* Solution::findCycleStart(ListNode *head) {
+    ListNode *slow = head, *fast = head;
+    while (fast != nullptr && fast->next != nullptr) {
+        slow = slow->next;
+        fast = fast->next->next;
+        if (slow == fast) {
+            break;
+        }
+    }
+    if (fast == nullptr || fast->next == nullptr) {
+        return nullptr;
+    }
+    
+    slow = head;
+    while (slow != fast) {
+        slow = slow->next;
+        fast = fast->next;
+    }
+    
+    return slow;
+}
+
+ListNode* Solution::hasIntersectNode(ListNode *headA, ListNode *headB) {
+    ListNode *p1 = headA, *p2 = headB;
+    while (p1 != p2) {
+        if (p1 == nullptr) {
+            p1 = headB;
+        } else {
+            p1 = p1->next;
+        }
+        
+        if (p2 == nullptr) {
+            p2 = headA;
+        } else {
+            p2 = p2->next;
+        }
+    }
+    
+    return p1;
 }
 
 ListNode* Solution::mergeKLists(ListNode lists[]) {

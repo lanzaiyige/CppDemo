@@ -28,6 +28,14 @@ public:
     ListNode* findFromEnd(ListNode *head, int k);
     
     ListNode* removeFromEnd(ListNode *head, int n);
+    
+    ListNode* middleNode(ListNode *head);
+    
+    bool hasCycle(ListNode *head);
+    
+    ListNode* findCycleStart(ListNode *head);
+    
+    ListNode* hasIntersectNode(ListNode *headA, ListNode *headB);
 };
 
 #endif /* _9_hpp */
