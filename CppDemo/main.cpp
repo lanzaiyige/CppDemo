@@ -37,6 +37,7 @@
 #include "Someclass.h"
 #include "lambda.h"
 #include "wrapped.h"
+#include "LinkList.hpp"
 
 using namespace std;
 
@@ -290,8 +291,42 @@ void test_set() {
     }
 }
 
+void test_linklist() {
+    ListNode *nodeLists[] = {
+        new ListNode(1),
+        new ListNode(2),
+        new ListNode(3),
+        new ListNode(4),
+        new ListNode(5),
+        new ListNode(6),
+    };
+    
+    int count = sizeof(nodeLists) / sizeof(ListNode *);
+    for (int i = 0; i < count; i++) {
+        ListNode *cur = nodeLists[i];
+        if (i == count - 1) {
+            cur->next = nullptr;
+        } else {
+            cur->next = nodeLists[i + 1];
+        }
+    }
+    
+    nodeLists[0]->output();
+    Solution ss = Solution();
+//    ListNode *node = ss.reverse(nodeLists[0]);
+    ListNode *node = ss.reverseKGroup(nodeLists[0], 2);
+    node->output();
+}
+
+void testPalindrome() {
+    string str = "abcddcba";
+    Solution ss = Solution();
+    bool result = ss.isPalindrome(str);
+    printf("%s\n", result ? "yes" : "no");
+}
+
 int main(int argc, const char * argv[]) {
-    test_set();
+//    test_set();
     
 //    int i;
 //    func(&i);
@@ -335,6 +370,8 @@ int main(int argc, const char * argv[]) {
 //    test_useless();
 //    test_lambda();
 //    test_exercise2();
+//    test_linklist();
+    testPalindrome();
     
     return 0;
 }

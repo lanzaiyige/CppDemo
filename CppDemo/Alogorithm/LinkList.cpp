@@ -5,7 +5,7 @@
 //  Created by tanzhikang on 2022/6/5.
 //
 
-#include "19.hpp"
+#include "LinkList.hpp"
 
 ListNode* Solution::removeNthFromEnd(ListNode *head, int n) {
     if (!head) {
@@ -155,4 +155,127 @@ ListNode* Solution::mergeKLists(ListNode lists[]) {
     
     
     return dummy->next;
+}
+
+ListNode* Solution::reverse(ListNode *head) {
+    if (head == nullptr || head->next == nullptr) {
+        return head;
+    }
+    ListNode *last = reverse(head->next);
+    head->next->next = head;
+    head->next = nullptr;
+    return last;
+}
+
+ListNode* Solution::reverse_iterator(ListNode *head) {
+    ListNode *cur, *pre, *next;
+    cur = head;
+    pre = nullptr;
+    next = head;
+    
+    while (cur != nullptr) {
+        next = cur->next;
+        
+        cur->next = pre;
+        pre = cur;
+        
+        cur = next;
+    }
+    
+    return pre;
+}
+
+ListNode* Solution::reverse_iterator(ListNode *a, ListNode *b) {
+    ListNode *pre, *cur, *next;
+    pre = nullptr;
+    cur = a;
+    next = a;
+    
+    while (cur != b) {
+        next = cur->next;
+        cur->next = pre;
+        pre = cur;
+        cur = next;
+    }
+    
+    return pre;
+}
+
+ListNode* Solution::reverseN(ListNode *head, int n) {
+    if (n == 1) {
+        successor = head->next;
+        return head;
+    }
+    
+    ListNode *last = reverseN(head, n - 1);
+    head->next->next = head;
+    head->next = successor;
+    
+    return last;
+}
+
+ListNode* Solution::reverseBetween(ListNode *head, int m, int n) {
+    if (m == 1) {
+        return reverseN(head, n);
+    }
+    
+    head->next = reverseBetween(head->next, m - 1, n - 1);
+    return head;
+}
+
+ListNode* Solution::reverseKGroup(ListNode *head, int n) {
+    if (head == nullptr) return nullptr;
+    
+    ListNode *a, *b;
+    a = b = head;
+    
+    for (int i = 0; i < n; i++) {
+        if (b == nullptr) return head;
+        b = b->next;
+    }
+    
+    ListNode *newHead = reverse_iterator(a, b);
+    a->next = reverseKGroup(b, n);
+    
+    return newHead;
+}
+
+string Solution::palindrome(const string &s, int left, int right) {
+    if (s.length() == 0) return nullptr;
+    if (s.length() == 1) return s;
+    
+    while (left >= 0 && right < s.length() && s.substr(left, 1) == s.substr(right, 1)) {
+        left--;
+        right++;
+    }
+    return s.substr(left + 1, right);
+}
+
+bool Solution::isPalindrome(const string &s) {
+    unsigned long left = 0, right = s.length() - 1;
+    while (left < right) {
+        if (s.substr(left, 1) != s.substr(right, 1)) {
+            return false;
+        }
+        
+        left++;
+        right--;
+    }
+    
+    return true;
+}
+
+
+bool Solution::isPalindromeList(ListNode *head) {
+    ListNode *slow, *fast;
+    slow = fast = head;
+    
+    while (fast != nullptr || fast->next != nullptr) {
+        slow = slow->next;
+        fast = fast->next->next;
+    }
+    
+    
+    
+    return false;
 }
