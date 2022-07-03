@@ -14,7 +14,7 @@
 
 using namespace std;
 
-class Solution {
+class LinkList {
 public:
     int cur = 0;
     ListNode *successor = nullptr;

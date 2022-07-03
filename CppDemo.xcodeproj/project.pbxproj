@@ -53,6 +53,7 @@
 		846F70E92833CBCE0037EB0D /* iterator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 846F70E82833CBCE0037EB0D /* iterator.cpp */; };
 		846F70EC2833CC7C0037EB0D /* util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 846F70EA2833CC7C0037EB0D /* util.cpp */; };
 		8477FE3B284CAD0900CA6B03 /* LinkList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8477FE39284CAD0900CA6B03 /* LinkList.cpp */; };
+		8483A8DC287161350014C40F /* Array.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8483A8DA287161350014C40F /* Array.cpp */; };
 		84D46B45282AC28200F3EFA5 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84D46B44282AC28200F3EFA5 /* main.cpp */; };
 		84DA11652837B740007129DB /* algobase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84DA11632837B740007129DB /* algobase.cpp */; };
 /* End PBXBuildFile section */
@@ -164,6 +165,8 @@
 		8477FE39284CAD0900CA6B03 /* LinkList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinkList.cpp; sourceTree = "<group>"; };
 		8477FE3A284CAD0900CA6B03 /* LinkList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkList.hpp; sourceTree = "<group>"; };
 		8477FE3C284CAE4E00CA6B03 /* ListNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListNode.h; sourceTree = "<group>"; };
+		8483A8DA287161350014C40F /* Array.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Array.cpp; sourceTree = "<group>"; };
+		8483A8DB287161350014C40F /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
 		84D46B41282AC28200F3EFA5 /* CppDemo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CppDemo; sourceTree = BUILT_PRODUCTS_DIR; };
 		84D46B44282AC28200F3EFA5 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		84DA11632837B740007129DB /* algobase.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = algobase.cpp; sourceTree = "<group>"; };
@@ -343,6 +346,8 @@
 				8477FE39284CAD0900CA6B03 /* LinkList.cpp */,
 				8477FE3A284CAD0900CA6B03 /* LinkList.hpp */,
 				8477FE3C284CAE4E00CA6B03 /* ListNode.h */,
+				8483A8DA287161350014C40F /* Array.cpp */,
+				8483A8DB287161350014C40F /* Array.hpp */,
 			);
 			path = Alogorithm;
 			sourceTree = "<group>";
@@ -472,6 +477,7 @@
 				8449EC86282AC720005FC931 /* stringbad.cpp in Sources */,
 				8449EC8A282AC720005FC931 /* Example.cpp in Sources */,
 				8449EC85282AC720005FC931 /* Stack.cpp in Sources */,
+				8483A8DC287161350014C40F /* Array.cpp in Sources */,
 				8449EC90282AC720005FC931 /* funadap.cpp in Sources */,
 				8449EC93282AC720005FC931 /* CD.cpp in Sources */,
 				8449EC7E282AC720005FC931 /* Lambda.cpp in Sources */,

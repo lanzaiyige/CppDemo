@@ -38,6 +38,7 @@
 #include "lambda.h"
 #include "wrapped.h"
 #include "LinkList.hpp"
+#include "Array.hpp"
 
 using namespace std;
 
@@ -291,14 +292,58 @@ void test_set() {
     }
 }
 
+void testPalindrome() {
+//    string str = "abcddcba";
+//    LinkList ss = LinkList();
+//    bool result = ss.isPalindrome(str);
+//    printf("%s\n", result ? "yes" : "no");
+}
+
+void test_hasCycle() {
+    ListNode *n1 = new ListNode(1);
+    ListNode *n2 = new ListNode(2);
+    ListNode *n3 = new ListNode(3);
+    ListNode *n4 = new ListNode(4);
+    ListNode *n5 = new ListNode(5);
+    ListNode *n6 = new ListNode(6);
+    ListNode *n7 = new ListNode(7);
+    ListNode *n8 = new ListNode(8);
+    ListNode *n9 = new ListNode(9);
+    ListNode *n10 = new ListNode(10);
+    ListNode *n11 = new ListNode(11);
+    ListNode *n12 = new ListNode(12);
+    ListNode *n13 = new ListNode(13);
+    
+    n1->next = n2;
+    n2->next = n3;
+    n3->next = n4;
+    n4->next = n5;
+    n5->next = n6;
+    n6->next = n7;
+    n7->next = n8;
+    n8->next = n9;
+    n9->next = n10;
+    n10->next = n11;
+    n11->next = n12;
+    n12->next = n13;
+    n13->next = n6;
+    
+    LinkList ss = LinkList();
+//    bool res = ss.hasCycle(n1);
+//    string log = res?"yes":"no";
+//    std::cout << log << endl;
+    
+    ListNode *start = ss.findCycleStart(n1);
+    start->print();
+}
+
 void test_linklist() {
     ListNode *nodeLists[] = {
         new ListNode(1),
-        new ListNode(2),
         new ListNode(3),
-        new ListNode(4),
         new ListNode(5),
-        new ListNode(6),
+        new ListNode(7),
+        new ListNode(9)
     };
     
     int count = sizeof(nodeLists) / sizeof(ListNode *);
@@ -311,21 +356,90 @@ void test_linklist() {
         }
     }
     
-    nodeLists[0]->output();
-    Solution ss = Solution();
-//    ListNode *node = ss.reverse(nodeLists[0]);
-    ListNode *node = ss.reverseKGroup(nodeLists[0], 2);
+    ListNode *nodeLists1[] = {
+        new ListNode(2),
+        new ListNode(4),
+        new ListNode(6),
+        new ListNode(8),
+        new ListNode(10),
+        new ListNode(12),
+    };
+    
+    int count1 = sizeof(nodeLists1) / sizeof(ListNode *);
+    for (int i = 0; i < count1; i++) {
+        ListNode *cur = nodeLists1[i];
+        if (i == count - 1) {
+            cur->next = nullptr;
+        } else {
+            cur->next = nodeLists1[i + 1];
+        }
+    }
+    
+    ListNode *node;
+    ListNode *head = nodeLists[0];
+    ListNode *head1 = nodeLists1[0];
+    
+    LinkList ss = LinkList();
+    
+    node = ss.middleNode(head);
+//    node = ss.removeFromEnd(head, 2);
+//    node = ss.mergeTwoLists(head, head1);
+//    node = ss.removeNthFromEnd1(head, 2);
+//    node = ss.removeNthFromEnd(head, 2);
+//    node = ss.reverse(nodeLists[0]);
+//    node = ss.reverseKGroup(nodeLists[0], 2);
     node->output();
+    nodeLists[0]->output();
 }
 
-void testPalindrome() {
-    string str = "abcddcba";
-    Solution ss = Solution();
-    bool result = ss.isPalindrome(str);
-    printf("%s\n", result ? "yes" : "no");
+void test_array() {
+    Array arr = Array();
+    int nums[] = {0,0,1,1,1,2,2,3,4};
+    int size = sizeof(nums)/sizeof(int);
+    
+    arr.moveZerosToEnd(nums, size);
+//    int output = arr.removeElement(nums, size, 1);
+//    int output = arr.removeDulicates(nums, size);
+    for (int i : nums) {
+        cout << i << endl;
+    }
+}
+
+void test_array_list_duplicates() {
+    ListNode *nodeLists[] = {
+        new ListNode(0),
+        new ListNode(0),
+        new ListNode(1),
+        new ListNode(1),
+        new ListNode(2),
+        new ListNode(3),
+        new ListNode(4),
+        new ListNode(4),
+        new ListNode(5)
+    };
+    
+    int count = sizeof(nodeLists) / sizeof(ListNode *);
+    for (int i = 0; i < count; i++) {
+        ListNode *cur = nodeLists[i];
+        if (i == count - 1) {
+            cur->next = nullptr;
+        } else {
+            cur->next = nodeLists[i + 1];
+        }
+    }
+    
+    ListNode *node;
+    ListNode *head = nodeLists[0];
+    Array *arr = new Array();
+    ListNode *res = arr->deleteDuplicates(head);
+    res->output();
+    
+    
 }
 
 int main(int argc, const char * argv[]) {
+//    test_array_list_duplicates();
+    test_array();
 //    test_set();
     
 //    int i;
@@ -371,7 +485,7 @@ int main(int argc, const char * argv[]) {
 //    test_lambda();
 //    test_exercise2();
 //    test_linklist();
-    testPalindrome();
+//    test_hasCycle();
     
     return 0;
 }

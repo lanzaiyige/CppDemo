@@ -26,6 +26,10 @@ public:
         } while (cur != nullptr);
         cout << "\n";
     }
+    void print() {
+        ListNode *cur = this;
+        cout << cur->val << endl;
+    }
 };
 
 
