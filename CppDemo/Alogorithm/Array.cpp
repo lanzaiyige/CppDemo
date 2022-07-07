@@ -65,3 +65,34 @@ void Array::moveZerosToEnd(int nums[], int size) {
         nums[i] = 0;
     }
 }
+
+int Array::binarySearch(int nums[], int size, int target) {
+    int left = 0, right = size - 1;
+    while (left <= right) {
+        int mid = (left + right) / 2;
+        if (nums[mid] == target) {
+            return nums[mid];
+        } else if (nums[mid] > target) {
+            right = mid - 1;
+        } else if (nums[mid] < target) {
+            left = mid + 1;
+        }
+    }
+    
+    return -1;
+}
+
+int* Array::twoSum(int nums[], int size, int target) {
+    int *r = new int[size];
+    
+    int left = 0;
+    int right = size - 1;
+    while (left <= right) {
+        int sum = nums[left] + nums[right];
+        if (sum == target) {
+            
+        }
+    }
+    
+    return r;
+}

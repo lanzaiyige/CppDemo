@@ -25,6 +25,11 @@ public:
     
     // 将0移到数组末尾
     void moveZerosToEnd(int nums[], int size);
+    
+    // 二分查找
+    int binarySearch(int nums[], int size, int target);
+    
+    int* twoSum(int nums[], int size, int target);
 };
 
 #endif /* Array_hpp */
